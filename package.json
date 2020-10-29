@@ -1,24 +1,20 @@
 {
-  "name": "boilerplate",
+  "name": "keckelt_web",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --inline",
-    "compile": "tsc",
-    "build": "webpack --env prod"
+    "build": "npm run build-styles && npm run copy",
+    "build-styles": "npx tailwindcss build src/styles.css -o dist/styles.css",
+    "copy": "npm run copy-assets && npm run copy-scripts && npm run copy-html",
+    "copy-assets": "if [ -d src/assets ]; then cp -rv src/assets/. dist/assets/; fi",
+    "copy-html": "cp src/*.html dist/",
+    "copy-scripts": "cp src/*.js dist/"
+
   },
   "author": "Klaus Eckelt",
   "license": "MIT",
-  "devDependencies": {
-    "css-loader": "^4.2.1",
-    "node-sass": "^4.14.1",
-    "sass-loader": "^9.0.3",
-    "style-loader": "^1.2.1",
-    "ts-loader": "^8.0.2",
-    "typescript": "^3.9.7",
-    "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0"
+  "dependencies": {
+    "tailwindcss": "^1.9.6"
   }
 }

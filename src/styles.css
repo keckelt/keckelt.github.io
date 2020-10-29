@@ -1,0 +1,19 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+:root
+
+.header {
+  border-color: #F2786D;
+}
+
+.header .img {
+  border-color: #425059;
+}
+
+a {
+  color: #F2786D; /* F2786D, FF7E73 */
+}
