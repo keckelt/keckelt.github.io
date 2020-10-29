@@ -6,10 +6,11 @@
     <title>Klaus Eckelt</title>
     <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
     <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 </head>
 
-<body class="container mx-auto">
-  <header class="header flex flex-row space-x-10 items-center p-2 border-b-2">
+<body class="container mx-auto max-w-4xl">
+  <header class="flex flex-row space-x-10 items-center p-2 border-b-2">
     <div class="img rounded-full h-40 w-40 bg-cover border-2" style="background-image: url('./assets/klaus_grey.png')"></div>
     <div class="flex flex-col">
       <div class="text-4xl font-semibold">Klaus Eckelt</div>
@@ -23,7 +24,29 @@
       </div>
     </div>
   </header>
-  <!-- ------------------------------------------------------------------------------------ -->
+
+  <main class="p-2">
+    <p class="text-justify">
+      <span class="text-2xl font-semibold">Hi!</span>
+      I'm a PhD student and research assistant in the Visual Data Science Group of the <a href="https://www.jku.at/en/">Johannes Kepler University Linz</a>, Austria.
+      In my research, I am studying and using visualization to analyse and compare biomedical data.
+    </p>
+    <p class="text-justify">
+      I'm also teaching assistant for Information Visualization, Visual Analytics, Explainable AI, and Compuer Graphics at the Johannes Kepler University,
+      and for the Visualisation module at the <a href="https://www.imperial.ac.uk/business-school/">Imperical College Business School</a>.
+    </p>
+  </main>
+  
+  <footer class="flex flex-col items-center space-y-5 p-2 border-t-2">
+    <div>Find me on</div>
+    <div class="flex flex-row space-x-10 text-3xl">
+      <a href="https://twitter.com/klaus_lml"><ion-icon name="logo-twitter"></ion-icon></a>
+      <a href=" www.linkedin.com/in/klaus-eckelt"><ion-icon name="logo-linkedin"></ion-icon></a>
+      <a href="https://scholar.google.de/citations?user=_wMz-ewAAAAJ&hl=de&oi=ao"><ion-icon name="school"></ion-icon></a>
+      <a href="https://github.com/keckelt/"><ion-icon name="logo-github"></ion-icon></a>
+      <a href="https://codepen.io/keckelt"><ion-icon name="logo-codepen"></ion-icon></a>
+    </div>
+  </footer>
   <script src="index.js"></script>
 </body>
 

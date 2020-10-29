@@ -4,9 +4,7 @@
 
 @tailwind utilities;
 
-:root
-
-.header {
+header, footer {
   border-color: #F2786D;
 }
 
@@ -14,6 +12,6 @@
   border-color: #425059;
 }
 
-a {
+header a, main a {
   color: #F2786D; /* F2786D, FF7E73 */
 }
