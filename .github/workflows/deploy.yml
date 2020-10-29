@@ -38,4 +38,4 @@ jobs:
         with:
           build_dir: dist
         env:
-          GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
+          GITHUB_PAT: ${{ secrets.DEPLOY_PAT }}
