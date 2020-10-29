@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "module": "es6",
+    "target": "es6",
+    "jsx": "react",
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "allowJs": true,
+    "moduleResolution": "node", // find node modules (e.g. bla-lib) when writing "import bla from 'bla-lib';"
+    "importHelpers": true
+  }
+}
