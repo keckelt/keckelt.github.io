@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "npm run build-styles && npm run copy",
-    "build-styles": "npx tailwindcss build src/styles.css -o dist/styles.css",
+    "build-styles": "npx tailwindcss build src/styles.css -o dist/styles.css -c tailwind.config.js",
     "copy": "npm run copy-assets && npm run copy-scripts && npm run copy-html",
     "copy-assets": "if [ -d src/assets ]; then cp -rv src/assets/. dist/assets/; fi",
     "copy-html": "cp src/*.html dist/",
