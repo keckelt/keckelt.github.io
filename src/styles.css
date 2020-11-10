@@ -15,3 +15,7 @@ header, footer {
 header a, main a {
   color: #F2786D; /* F2786D, FF7E73 */
 }
+
+ul, ol {
+  padding-left: 2em;
+}
