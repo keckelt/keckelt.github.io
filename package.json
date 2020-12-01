@@ -1,7 +1,7 @@
 {
   "name": "keckelt_web",
   "version": "1.0.0",
-  "description": "",
+  "description": "Personal Website",
   "main": "index.js",
   "scripts": {
     "build": "npm run build-styles && npm run copy",
