@@ -14,6 +14,15 @@ header, footer {
 
 header a, main a {
   color: #F2786D; /* F2786D, FF7E73 */
+  text-decoration: underline;
+}
+
+footer a {
+  color: #555;
+}
+
+footer a:hover {
+  color: #F2786D; /* F2786D, FF7E73 */
 }
 
 ul, ol {
