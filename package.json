@@ -8,7 +8,7 @@
     "build-styles": "npx tailwindcss build src/styles.css -o dist/styles.css -c tailwind.config.js",
     "copy": "npm run copy-assets && npm run copy-scripts && npm run copy-html",
     "copy-assets": "if [ -d src/assets ]; then cp -rv src/assets/. dist/assets/; fi",
-    "copy-html": "cd src/ && find .  -name '*.html' -exec rsync -R {} ../dist/ \\;",
+    "copy-html": "cp src/*.html dist/",
     "copy-scripts": "cp src/*.js dist/",
     "copy-settings": "cp .github/CNAME dist/",
     "deploy": "npm run build && npm run copy-settings"
