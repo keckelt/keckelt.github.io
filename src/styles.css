@@ -4,21 +4,17 @@
 
 @tailwind utilities;
 
-/*
-  greyscale img:  #F2786D;
-  green img:      
-*/
-
-header, footer {
-  border-color: #5FA845;
+:root {
+  --green: #5FA845; /* orignal img */
+  --coral: #F2786D; /* greyscale img */
 }
 
-.header .img {
-  border-color: #425059;
+header, footer {
+  border-color: var(--green);
 }
 
 header a, main a {
-  color: #5FA845;
+  color: var(--green);
 }
 
 a:hover {
@@ -30,7 +26,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #5FA845;
+  color: var(--green);
 }
 
 ul, ol {
