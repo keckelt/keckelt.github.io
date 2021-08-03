@@ -13,7 +13,7 @@ header, footer {
   border-color: var(--green);
 }
 
-header a, main a {
+header a, main a, main .text-2xl {
   color: var(--green);
 }
 
@@ -27,8 +27,4 @@ footer a {
 
 footer a:hover {
   color: var(--green);
-}
-
-ul, ol {
-  padding-left: 2em;
 }
