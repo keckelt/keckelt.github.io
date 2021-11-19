@@ -134,16 +134,40 @@
 
       <li><h2 class="text-2xl mt-4">DataVis PhD Stuff</h2>
         <ul>
-          <li><h3 class="text-xl">General Resources</h3>
+          <li><h3 class="text-xl">Writing</h3>
             <ul class="list-disc">
-              <li>Twitter for scientists: <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007513">https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007513</a></li>
+              <li><a href="thesaurus.com/">Thesaurus</a></li>
+              <li><a href="https://www.powerthesaurus.org/">Power Thesaurus 🦖⚡</a></li>
+              <li>low level rules <a href="https://www.cs.ubc.ca/~tmm/writing.html">https://www.cs.ubc.ca/~tmm/writing.html</a></li>
+              <li>At a higher level, see the <a href="https://www.biorxiv.org/content/early/2017/05/23/088278">Ten Simple Rules for Structuring Papers (Kording and Mensh, PLOS Computational Biology)</a></li>
+              <li>Useful Regex commands: 
+                <code class="block whitespace-pre">
+grep " an [^AEIOUaeiuo\\]" main.tex     # find wrong articles
+grep " a [AEIOUaeiuo\\]" main.tex       # find wrong articles
+
+egrep "(\b[a-zA-Z]+) \1\b" main.tex     # double words
+
+egrep "(et\. al)|(et al[^\.])" main.tex # et al spelled wrongly
+egrep "\s\\\\cite{" main.tex            # cite without nbsp
+egrep "\w+, \w+ and " main.tex          # find missing oxford comma 
+egrep "\w+, \w+, and " main.tex         # find oxford commas
+
+grep "[^.][^A-Z]\. [a-z]" main.text     # Missing capital for first word in new sentence
+                </code>
+              </li>
+
               <li>How to write a scientific paper: <a href="https://www.cg.tuwien.ac.at/resources/HowToWriteAScientificPaper.html">https://www.cg.tuwien.ac.at/resources/HowToWriteAScientificPaper.html</a></li>
-              <li>How to give a talk (german): <a href="https://www.cg.tuwien.ac.at/resources/onTalks/">https://www.cg.tuwien.ac.at/resources/onTalks/</a></li>
-              <li>Ho to record videos: <a href="https://www.youtube.com/watch?v=N6-Q2dgodLs">https://www.youtube.com/watch?v=N6-Q2dgodLs</a></li>
-              <li>Top 10 Ways to get Rejected: <a href="https://www.slideshare.net/joaquimjorge94/top-10-ways-to-get-your-paper-rejected-at-cagjournal">https://www.slideshare.net/joaquimjorge94/top-10-ways-to-get-your-paper-rejected-at-cagjournal</a></li>
               <li>Common mistakes in technical writing: <a href="https://cs.dartmouth.edu/~wjarosz/writing.html">https://cs.dartmouth.edu/~wjarosz/writing.html</a></li>
               <li>Practical Tips and Tricks for Paper Writing (updated 2020): <a href="https://www.cg.tuwien.ac.at/research/publications/2010/groeller-2010-PTT/">https://www.cg.tuwien.ac.at/research/publications/2010/groeller-2010-PTT/</a></li>
               <li>Google Documentation Style Guide: <a href="https://developers.google.com/style/">https://developers.google.com/style/</a></li>
+            </ul>
+          </li>
+          <li><h3 class="text-xl">General Resources</h3>
+            <ul class="list-disc">
+              <li>Twitter for scientists: <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007513">https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007513</a></li>
+              <li>Top 10 Ways to get Rejected: <a href="https://www.slideshare.net/joaquimjorge94/top-10-ways-to-get-your-paper-rejected-at-cagjournal">https://www.slideshare.net/joaquimjorge94/top-10-ways-to-get-your-paper-rejected-at-cagjournal</a></li>
+              <li>How to give a talk (german): <a href="https://www.cg.tuwien.ac.at/resources/onTalks/">https://www.cg.tuwien.ac.at/resources/onTalks/</a></li>
+              <li>Ho to record videos: <a href="https://www.youtube.com/watch?v=N6-Q2dgodLs">https://www.youtube.com/watch?v=N6-Q2dgodLs</a></li>
               <li>How to do a Successful PhD (in Visual Computing): <a href="https://biomedvis.github.io/announcements/program/#Eduard%20Gr%C3%B6ller">https://biomedvis.github.io/announcements/program/#Eduard%20Gr%C3%B6ller</a></li>
 
             </ul>
