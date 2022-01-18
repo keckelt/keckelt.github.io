@@ -11,8 +11,8 @@
     "copy-html": "cp src/*.html dist/",
     "copy-scripts": "cp src/*.js dist/",
     "copy-settings": "cp .github/CNAME dist/",
-    "deploy": "npm run build && npm run copy-settings"
-
+    "deploy": "npm run build && npm run copy-settings",
+    "start": "npm run build"
   },
   "author": "Klaus Eckelt",
   "license": "MIT",
