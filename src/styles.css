@@ -3,26 +3,27 @@
 @tailwind utilities;
 
 :root {
-  --green: #5FA845; /* orignal img */
-  --coral: #F2786D; /* greyscale img */
+  --primary: #158143; /* bg-green-700 */
 }
 
-header, footer {
-  border-color: var(--green);
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: #7ABD62;
+  }
+}
+
+hr {
+  border: 1px solid var(--primary);
 }
 
 header a, main a, main .text-2xl {
-  color: var(--green);
+  color: var(--primary);
 }
 
 a:hover {
   text-decoration: underline;
 }
 
-footer a {
-  color: #555;
-}
-
 footer a:hover {
-  color: var(--green);
+  color: var(--primary);
 }
