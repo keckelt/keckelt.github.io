@@ -7,15 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Klaus' Bookmarks</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👋</text></svg>">
-    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 </head>
 
 <body class="container mx-auto max-w-4xl dark:bg-zinc-900 text-zinc-800 dark:text-zinc-100">
   <header class="flex flex-row space-x-10 items-center p-2">
-    <div class="img rounded-full h-40 w-40 bg-cover border-2" style="background-image: url('./assets/klaus_green.jpg')"></div>
-    </div>
+    <div class="img rounded-full h-40 w-40 bg-cover border-2" style="background-image: url('./src/assets/klaus_green.jpg')"></div>
     <div class="flex flex-col">
       <div class="text-4xl font-semibold">Klaus Eckelt</div>
       <div class="text-2xl flex items-center space-x-1">
@@ -211,13 +209,13 @@ grep "[^.][^A-Z]\. [a-z]" main.text     # Missing capital for first word in new 
               <li>Nightingale: <a href="https://medium.com/nightingale">https://medium.com/nightingale</a></li>
             </ul>
           </li>
-          
+        </ul>
       </li>
     </ul>
 
     <li><h2 class="text-2xl mt-4">Data</h2>
       <ul>
-        <li><h3 class="text-xl">Wrangling</h3>
+        <h3 class="text-xl">Wrangling</h3>
         <li>Arquero Data Wrangler: <a href="https://observablehq.com/@observablehq/data-wrangler">https://observablehq.com/@observablehq/data-wrangler</a> </li>
         <li><h3 class="text-xl">Single Cell</h3>
           <ul class="list-disc">
@@ -236,13 +234,13 @@ grep "[^.][^A-Z]\. [a-z]" main.text     # Missing capital for first word in new 
             <li>Introduction to Data Science: <a href="https://datasciencecourse.net/">https://datasciencecourse.net/</a></li>
           </ul>
         </li>
+      </ul>
     </li>
-  </ul>
 </main>
 
 
-  <script src="index.js"></script>
-  <script>if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"Klaus.Eckelt@gmail.com",utcoffset:"1"}))};sessionStorage.setItem("_swa","1");</script>
+<script type="module" src="/src/main.ts"></script>
+<script>if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"Klaus.Eckelt@gmail.com",utcoffset:"1"}))};sessionStorage.setItem("_swa","1");</script>
 </body>
 
 </html>

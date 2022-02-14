@@ -1,21 +1,24 @@
-# general things to ignore
-/.tscache
-/.idea
-/build/
-/dist/
-*.egg-info/
-*.egg
-*.py[cod]
-__pycache__/
-*.so
-*~
+# Logs
+logs
 *.log
-*.pot
-*.pyc
-*.swp
-*.lock
-# due to using tox and pytest
-.tox
-.cache
-node_modules/
-/.cache-loader
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
