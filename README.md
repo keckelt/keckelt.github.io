@@ -1,8 +1,8 @@
-My Website.
+### My Website. ⇨ https://keckelt.github.io/
 
-⇨ https://keckelt.github.io/
+---
 
-# Update Website
+**Develop**
 
-1. Make Changes
-2. Run `npm run deploy`
+1. Watch changes: `npm start`
+2. Do changes
