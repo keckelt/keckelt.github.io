@@ -9,7 +9,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "copy-cname": "cp .github/CNAME dist/",
-    "deploy": "npm run build && npm run copy-settings"
+    "deploy": "npm run build && npm run copy-cname"
   },
   "devDependencies": {
     "@types/feather-icons": "^4.7.0",
