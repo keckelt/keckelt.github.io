@@ -35,14 +35,13 @@
     <meta property="og:url" content="https://eckelt.info/" />
 
     <!-- Styles and Icons -->
-    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 </head>
 
 <body class="container mx-auto max-w-4xl dark:bg-zinc-900 text-zinc-800 dark:text-zinc-100">
   <header class="flex flex-row space-x-5 sm:space-x-10 p-2 items-center mb-2">
-    <div class="img rounded-full aspect-square bg-cover bg-center h-32 sm:h-40" style="background-image: url('./assets/klaus_green.jpg')"></div>
+    <div class="img rounded-full aspect-square bg-cover bg-center h-32 sm:h-40" style="background-image: url('./src/assets/klaus_green.jpg')"></div>
     <div class="flex flex-col">
       <div class="text-2xl sm:text-4xl font-semibold">Klaus Eckelt</div>
       <div class="text-xl sm:text-2xl flex items-center space-x-1">
@@ -73,7 +72,7 @@
         <li class="paper text-justify">
           <span class="authors font-light">Klaus Eckelt, Andreas Hinterreiter, Patrick Adelberger, Conny Walchshofer, Vaishali Dhanoa, Christina Humer, Moritz Schöfl, Christian A. Steinparz, Marc Streit</span>
           <a class="title font-medium" href="https://jku-vds-lab.at/publications/2022_embedding_structure/">Visual Exploration of Relationships and Structure in Low-Dimensional Embeddings</a>
-          <span class="journal font-light"">OSF, doi:10.31219/osf.io/ujbrs, 2021</span>.
+          <span class="journal font-light">OSF, doi:10.31219/osf.io/ujbrs, 2021</span>.
         </li>
         <li class="paper text-justify">
           <span class="authors font-light">Patrick Adelberger, Klaus Eckelt, Markus J. Bauer, Marc Streit, Christian Haslinger, Thomas Zichner </span>
@@ -132,7 +131,7 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="index.js"></script>
+  <script type="module" src="/src/main.ts"></script>
   <script>if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"Klaus.Eckelt@gmail.com",utcoffset:"1"}))};sessionStorage.setItem("_swa","1");</script>
 </body>
 
