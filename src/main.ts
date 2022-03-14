@@ -1,6 +1,9 @@
 import './style.css'
+import { addIcons } from 'ionicons';
 import * as feather from 'feather-icons';
 feather.replace();
+
+addIcons({});
 
 console.log('Hello Visitor 👋');
 

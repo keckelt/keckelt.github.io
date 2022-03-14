@@ -20,6 +20,7 @@
     "vite": "^2.8.0"
   },
   "dependencies": {
-    "feather-icons": "^4.28.0"
+    "feather-icons": "^4.28.0",
+    "ionicons": "^6.0.1"
   }
 }
