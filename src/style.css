@@ -27,3 +27,7 @@ a:hover {
 footer a:hover {
   color: var(--primary);
 }
+
+.paper ion-icon, .poster ion-icon {
+ pointer-events: none; 
+}
