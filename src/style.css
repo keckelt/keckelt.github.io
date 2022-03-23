@@ -16,7 +16,7 @@ hr {
   border: 1px solid var(--primary);
 }
 
-header a, main a, main .text-2xl {
+header a, main a, .green {
   color: var(--primary);
 }
 
