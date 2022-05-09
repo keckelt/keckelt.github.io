@@ -4,7 +4,10 @@
 
 :root {
   --primary: #158143; /* bg-green-700 */
-  font-size: 2em;
+  font-size: 1.3em;
+  @media (min-width: 768px) { 
+    font-size: 2em;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
