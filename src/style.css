@@ -4,6 +4,10 @@
 
 :root {
   --primary: #158143; /* bg-green-700 */
+  font-size: 1.5em;
+  @media (min-width: 768px) { 
+    font-size: 2em;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -30,4 +34,8 @@ footer a:hover {
 
 .paper ion-icon, .poster ion-icon {
  pointer-events: none; 
+}
+
+.me {
+  text-decoration-color: var(--primary);
 }
