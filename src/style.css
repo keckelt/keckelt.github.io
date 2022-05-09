@@ -4,7 +4,7 @@
 
 :root {
   --primary: #158143; /* bg-green-700 */
-  font-size: 1.3em;
+  font-size: 1.5em;
   @media (min-width: 768px) { 
     font-size: 2em;
   }
