@@ -13,6 +13,7 @@
     <meta name="keywords" content="portfolio, developer, researcher">
     <meta name="author" content="Klaus Eckelt">
     <meta name="robots" content="index,nofollow">
+    <meta name="description" content="I'm a doctoral researcher, teacher, and PhD student in the Visual Data Science Lab at Johannes Kepler University Linz. Here's an overview of my work.">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👋</text></svg>">
 
     <!-- Twitter -->
@@ -39,7 +40,7 @@
   <header class="flex flex-col md:flex-row space-y-5 md:space-y-0 md:space-x-5 p-2 items-center mb-2 max-w-xl mx-auto">
     <div class="img rounded-full aspect-square bg-cover bg-center h-32 sm:h-40" style="background-image: url('./klaus_green.jpg')" role="img" aria-label="Headshot of Klaus Eckelt."></div>
     <div class="flex flex-col">
-      <div class="text-2xl sm:text-4xl font-semibold">Klaus Eckelt</div>
+      <h1 class="text-2xl sm:text-4xl font-semibold">Klaus Eckelt</h1>
       <div class="text-xl sm:text-2xl flex items-center space-x-1">
         <i data-feather="mail"></i>
         <a href="mailto:klaus@eckelt.info">klaus@eckelt.info</a>
@@ -63,30 +64,11 @@
         I received my master's and bachelor's degrees at Vienna University of Technology, where I became interested in life sciences and the analysis of biomedical data.
       </p>
     </article>
-
-    <!--<article class="mt-4 font-light md:text-justify leading-tight">
-      <h1 class="text-2xl font-semibold mb-1 green">Work</h1>
-
-      Coral
-      TourDino
-      Projection Space Explorer
-
-      Spotify Dashboard
-      GPU Price
-      shitshow
-
-
-      nonSNSE
-
-
-      Browser Extension
-
-    </article>-->
     
     
     <article class="mt-12 font-light md:text-justify leading-tight text-sm">
-      <h1 class="text-2xl font-semibold mb-1 green">Publications</h1>
-      <h2 class="text-xl font-semibold mb-1 mt-3 green">Papers</h2>
+      <h2 class="text-2xl font-semibold mb-1 green">Publications</h2>
+      <h3 class="text-xl font-semibold mb-1 mt-3 green">Papers</h3>
       <section class="flex flex-col md:flex-row gap-3 items-start">
         <div class="basis-1/4">
           <img class="rounded bg-white" src="./papers/2022_embedding_structure_large.png" alt="Teaser image of the paper showing a scatterplot with chess game states as points. States of the same game are connected with lines. The lines are in three different colors, showing wich type of opening was chosen by the first player. Inside the scatterplot, five clusters are game state clusters are selected. A sidebar on the right summarizes each cluster and shows their differences.">
@@ -134,7 +116,7 @@
 
 
 
-      <h2 class="text-xl font-semibold mb-1 mt-8 green">Posters</h2>
+      <h3 class="text-xl font-semibold mb-1 mt-8 green">Posters</h3>
       <section class="flex flex-col md:flex-row gap-3 items-start">
         <div class="basis-5/6">
           <p>
@@ -161,13 +143,13 @@
 
 
 
-      <h2 class="text-xl font-semibold mb-1 mt-8 green">Theses</h2>
+      <h3 class="text-xl font-semibold mb-1 mt-8 green">Theses</h3>
       <section class="flex flex-col md:flex-row gap-3 items-start">
         <div class="basis-1/4">
           <img class="rounded" src="./papers/2018_msc_thesis.png" alt="Screenshot of StratomeX application with a ranked list of attributes at the bottom. The attributes are ranked based on the similarity to a selected subset of the data.">
         </div>
         <div class="basis-3/4">
-          <h3 class="font-semibold mb-1 green">Diploma Thesis</h3>
+          <h4 class="font-semibold mb-1 green">Diploma Thesis</h4>
           <p>
             <a class="title font-medium" href="https://www.cg.tuwien.ac.at/research/publications/2018/Eckelt_2018_01/">Data-Driven User Guidance in Multi-Attribute Data Exploration</a>,
             <span class="authors"><span class="underline decoration-dotted me">Klaus Eckelt</span>, Marc Streit, Meister Eduard Gröller</span>,
@@ -182,7 +164,7 @@
           <img class="rounded" src="./papers/2017_bsc_thesis.jpg" alt="Photo of a 3D printed aorta with an aortic dissection.">
         </div>
         <div class="basis-3/4">
-          <h3 class="font-semibold mb-1 green">Bachelor's Thesis</h3>
+          <h4 class="font-semibold mb-1 green">Bachelor's Thesis</h4>
           <p>
             <a class="title font-medium" href="https://www.cg.tuwien.ac.at/research/publications/2017/Eckelt_2017/">Vascular Printing - 3D Printing of Aortic Dissections</a>,
             <span class="authors"><span class="underline decoration-dotted me">Klaus Eckelt</span>, Alexey Karimov, Gabriel Mistelbauer, Meister Eduard Gröller</span>,
@@ -196,7 +178,7 @@
     </article>
     
     <article class="mt-12 font-light text-justify max-w-xl mx-auto">
-      <h1 class="text-2xl font-semibold mb-1 green">Teaching</h1>
+      <h2 class="text-2xl font-semibold mb-1 green">Teaching</h2>
 
       <p>
         In my courses, I teach students how to handle, visualize, and interpret data with Python, JavaScript, and business intelligence software such as Tableau and Microsoft PowerBI.
@@ -211,7 +193,28 @@
       <p>
         At the <a href="https://www.imperial.ac.uk/business-school/">Imperial College Business School</a>, I was a teaching assistant for the Visualisation module of the Business Analytics master's program&nbsp;(2019-2021). 
       </p>
+
+      <!-- TODO teaching resources:
+        * python vis tutorial
+        * infovis tutorial
+        * XAI assignments -->
     </article>
+    
+    <!-- TODO <article class="mt-4 font-light text-justify">
+      <h2 class="text-2xl font-semibold mb-1 green">Private Fun stuff</h2>
+
+      GPU
+      Spotify Dashboard
+
+      commit-vis
+      heatmap
+      simpsons
+      non-Snse
+      tsne.ts
+      shitshow
+
+      AILS
+    </article> -->
   </main>
 
   <hr class="my-4 mt-12">
