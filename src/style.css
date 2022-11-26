@@ -53,3 +53,12 @@ footer a:hover {
 .me {
   text-decoration-color: var(--primary);
 }
+
+@font-face {
+  font-family: 'ring';
+  src: url('ringbearer.ttf');
+}
+
+.ringbearer {
+  font-family: 'ring', serif;
+}
