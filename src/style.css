@@ -56,7 +56,7 @@ footer a:hover {
 
 @font-face {
   font-family: 'ring';
-  src: url('ringbearer.ttf');
+  src: url('src/ringbearer.ttf');
 }
 
 .ringbearer {
