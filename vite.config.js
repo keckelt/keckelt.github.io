@@ -7,8 +7,7 @@ module.exports = defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        bookmarks: resolve(__dirname, 'bookmarks.html'),
-        jumanji: resolve(__dirname, 'jumanji.html')
+        bookmarks: resolve(__dirname, 'bookmarks.html')
       }
     }
   }
