@@ -8,8 +8,8 @@ import { links } from '../data/site';
     <h1 class="pixel">Klaus<br /><span class="surname">Eckelt</span></h1>
     <div class="grid">
       <div class="text">
-        <p class="intro">I build visual analytics for pharma R&amp;D. Mostly I care about resolution — single-cell and spatial.</p>
-        <p class="mono">Engineering manager at datavisyn<br />PhD, JKU Linz</p>
+        <p class="intro">I build visual analytics for pharma R&amp;D. My research is about visualizing differences: what sets one group apart from another, and whether that difference is real.</p>
+        <p class="mono">Engineering manager at datavisyn<br />PhD, JKU Linz, 2026</p>
       </div>
       <div class="fig">
         <EmbeddingFigure />
@@ -56,6 +56,13 @@ import { links } from '../data/site';
     .grid { padding-block: clamp(16px, 3svh, 32px) clamp(12px, 2svh, 24px); }
     nav { display: flex; justify-content: space-between; gap: 8px; padding-top: 4px; font-size: 17px; }
     nav a { min-height: 44px; display: inline-flex; align-items: center; padding-block: 0; }
+  }
+
+  /* Short phones: smaller text, so the figure keeps a readable size */
+  @media (max-width: 600px) and (max-height: 760px) {
+    h1 { font-size: 40px; }
+    .intro { font-size: 17px; line-height: 1.4; }
+    .mono { font-size: 12px; }
   }
 
   /* Short screens scroll as usual, so the figure needs its own height again */

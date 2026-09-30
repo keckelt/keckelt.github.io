@@ -15,6 +15,7 @@ Colour study ("Resolution in Colour"): https://claude.ai/artifact/AakzoQPgoekHWQ
 - **Hosting:** still the `gh-pages` branch (Pages source unchanged), built by the workflow on push and nightly.
 - **Releases:** date tags `YYYY.MM.DD`. `2025.01.29` is the old site.
 - **Account:** all work on this repo goes through the private `keckelt` GitHub account, never the work account.
+- **PhD:** completed 28 September 2026. Thesis: *Visualizing Differences: Interactive Characterization and Comparison of High-Dimensional Data Sets*. The home sentence now comes from it (visualizing differences, and whether a difference is real) instead of the "resolution" placeholder.
 
 ---
 
