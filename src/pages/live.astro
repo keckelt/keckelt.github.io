@@ -1,0 +1,61 @@
+---
+import Base from '../layouts/Base.astro';
+import SubHeader from '../components/SubHeader.astro';
+import ConcertTimeline from '../components/ConcertTimeline.astro';
+import concerts from '../data/concerts.json';
+
+const acts = concerts.reduce((s, n) => s + n.acts.length, 0);
+const venues = new Set(concerts.map((n) => n.venue)).size;
+const since = concerts[0].date.slice(0, 4);
+
+const making = [
+  { title: 'CoralDuck', text: 'Cohort comparison, serverless — DuckDB in the browser.', href: 'https://coralduck.eckelt.info' },
+  { title: 'First artwork', text: 'Starting soon.' },
+  { title: 'First track', text: 'Learning to produce electronic music. First sketches soon.' },
+];
+---
+<Base title="Live & Making — Klaus Eckelt">
+  <SubHeader title="Live & Making" intro="Concerts I have been to, and things I make when I am not at work." />
+
+  <section class="band wrap live">
+    <div class="head">
+      <h2 class="label">Live — one dot per act, since {since}</h2>
+      <span class="mono">{concerts.length} nights, {acts} acts, {venues} venues</span>
+    </div>
+    <ConcertTimeline />
+    <div class="legend mono">
+      <span><i class="dot"></i>headliner</span>
+      <span><i class="ring"></i>support</span>
+      <span>Hover a column for the night</span>
+    </div>
+  </section>
+
+  <section id="making" class="wrap making">
+    <h2 class="label">Making things</h2>
+    <div class="cols">
+      {making.map((m) => (
+        <article>
+          <h3>{m.href ? <a href={m.href}>{m.title}</a> : m.title}</h3>
+          <p>{m.text}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+</Base>
+
+<style>
+  .label { margin: 0; text-transform: uppercase; font-weight: 400; }
+  .live { margin-top: clamp(72px, 10vw, 120px); display: flex; flex-direction: column; gap: 16px; }
+  .head { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; align-items: baseline; }
+  .legend { display: flex; flex-wrap: wrap; gap: 8px 28px; font-size: 12px; margin-top: 8px; }
+  .legend span { display: inline-flex; align-items: center; gap: 8px; }
+  .dot, .ring { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+  .dot { background: var(--accent); }
+  .ring { border: 1.5px solid var(--accent); }
+  .making { padding-top: clamp(72px, 10vw, 120px); }
+  .cols { margin-top: 28px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+  article { border-top: 1px solid var(--ink); padding-top: 20px; }
+  h3 { margin: 0; font-size: 22px; font-weight: 500; letter-spacing: -0.01em; }
+  article p { margin: 12px 0 0; font-size: 16px; line-height: 1.55; color: var(--muted); }
+  @media (max-width: 860px) { .cols { grid-template-columns: 1fr; gap: 32px; } }
+</style>

@@ -1,0 +1,68 @@
+@import '@fontsource-variable/geist';
+@import '@fontsource-variable/geist-mono';
+@import '@fontsource/silkscreen';
+
+/* ---------- Tokens: light (default) ---------- */
+:root {
+  /* Light: warm white, black type, slate accent ("Refined", R1) */
+  --bg: #F6F5F0;
+  --ink: #141416;
+  --muted: #4F5552;
+  --accent: #4E6A5E;
+  --band: #EAEDE6;
+  --rule: #DEDDD6;
+  --faint: #D2D2CC;  /* cells outside a cohort */
+  --cell-1: #4E6A5E;
+  --cell-2: #A9C4B6;
+  --cell-3: #141416;
+
+  --font-sans: 'Geist Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'Geist Mono Variable', ui-monospace, monospace;
+  --font-pixel: 'Silkscreen', 'Courier New', monospace;
+
+  --gutter: clamp(24px, 9vw, 120px);
+  --slant: clamp(40px, 7vw, 90px);
+  color-scheme: light;
+}
+
+/* ---------- Tokens: dark ("night mood", round 5) ---------- */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --bg: #0E0E12; --ink: #ECEAF1; --muted: #9C98AB; --accent: #3DE0B0;
+    --band: #17171E; --rule: #2A2A33; --faint: #34343D;
+    --cell-1: #3DE0B0; --cell-2: #1F7A62; --cell-3: #ECEAF1;
+    color-scheme: dark;
+  }
+}
+:root[data-theme='dark'] {
+  --bg: #0E0E12; --ink: #ECEAF1; --muted: #9C98AB; --accent: #3DE0B0;
+  --band: #17171E; --rule: #2A2A33; --faint: #34343D;
+  --cell-1: #3DE0B0; --cell-2: #1F7A62; --cell-3: #ECEAF1;
+  color-scheme: dark;
+}
+
+/* ---------- Base ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+html { background: var(--bg); color: var(--ink); font-family: var(--font-sans); -webkit-text-size-adjust: 100%; }
+body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; }
+main { flex: 1; }
+a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 5px; }
+a:hover { color: var(--accent); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+img, svg { max-width: 100%; }
+
+.pixel { font-family: var(--font-pixel); font-weight: 400; letter-spacing: 0.01em; }
+.label { font-family: var(--font-pixel); font-size: 11px; letter-spacing: 0.08em; color: var(--accent); }
+.mono { font-family: var(--font-mono); font-size: 13px; line-height: 1.6; color: var(--muted); }
+.wrap { padding-inline: var(--gutter); }
+
+/* Diagonal band (css-tricks style, via clip-path) */
+.band {
+  background: var(--band);
+  clip-path: polygon(0 0, 100% var(--slant), 100% 100%, 0 calc(100% - var(--slant)));
+  padding-block: calc(var(--slant) + 90px) calc(var(--slant) + 100px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
+}

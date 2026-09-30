@@ -1,0 +1,75 @@
+---
+import '../styles/global.css';
+import { social, email } from '../data/site';
+
+interface Props { title: string; description?: string }
+const { title, description = 'Klaus Eckelt builds visual analytics for pharma R&D at datavisyn.' } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={new URL(Astro.url.pathname, Astro.site)} />
+    <meta property="og:image" content={new URL('/klaus_green.jpg', Astro.site)} />
+    <meta name="twitter:card" content="summary" />
+    <!-- Apply a saved theme before first paint, so there is no flash. -->
+    <script is:inline>
+      try {
+        const t = localStorage.getItem('theme');
+        if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <button class="theme-toggle" type="button" aria-label="Switch colour theme">
+      <span aria-hidden="true">◐</span>
+    </button>
+    <main>
+      <slot />
+    </main>
+    <footer class="wrap">
+      <a href={`mailto:${email}`}>{email}</a>
+      <nav aria-label="Elsewhere">
+        {social.map((s) => <a href={s.href}>{s.label}</a>)}
+      </nav>
+    </footer>
+
+    <script>
+      const btn = document.querySelector<HTMLButtonElement>('.theme-toggle');
+      const root = document.documentElement;
+      const current = () =>
+        root.dataset.theme ?? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      btn?.addEventListener('click', () => {
+        const next = current() === 'dark' ? 'light' : 'dark';
+        root.dataset.theme = next;
+        try { localStorage.setItem('theme', next); } catch (e) {}
+      });
+    </script>
+
+    <!-- Privacy-friendly visit counter, as on the old site -->
+    <script is:inline src="/counter.js"></script>
+
+    <style>
+      .theme-toggle {
+        position: fixed; top: 20px; right: 20px; z-index: 10;
+        width: 44px; height: 44px; border: 0; border-radius: 50%;
+        background: transparent; color: var(--ink); font-size: 20px; cursor: pointer;
+      }
+      .theme-toggle:hover { color: var(--accent); }
+      footer {
+        display: flex; flex-wrap: wrap; gap: 16px 28px; justify-content: space-between; align-items: baseline;
+        padding-block: 96px 56px; font-size: 14px;
+      }
+      footer nav { display: flex; flex-wrap: wrap; gap: 12px 28px; }
+      footer nav a { text-decoration: none; }
+    </style>
+  </body>
+</html>

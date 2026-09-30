@@ -1,0 +1,25 @@
+---
+import { links } from '../data/site';
+interface Props { title: string; intro: string }
+const { title, intro } = Astro.props;
+---
+<header class="wrap">
+  <div class="bar">
+    <a class="home pixel" href="/">← Klaus <span class="surname">Eckelt</span></a>
+    <nav aria-label="Main">{links.map((l) => <a href={l.href} aria-current={Astro.url.pathname.replace(/\.html$/, '') === l.href ? 'page' : undefined}>{l.label}</a>)}</nav>
+  </div>
+  <h1 class="pixel">{title}</h1>
+  <p>{intro}</p>
+</header>
+
+<style>
+  header { padding-top: 48px; }
+  .bar { display: flex; flex-wrap: wrap; gap: 16px 32px; justify-content: space-between; align-items: baseline; padding-right: 56px; font-size: 14px; }
+  .home { font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; }
+  .surname { color: var(--accent); }
+  nav { display: flex; flex-wrap: wrap; gap: 12px 32px; }
+  nav a { text-decoration: none; }
+  nav a[aria-current='page'] { text-decoration: underline; }
+  h1 { margin: clamp(72px, 12vw, 130px) 0 0; font-size: clamp(40px, 7vw, 64px); line-height: 1; text-transform: uppercase; }
+  p { margin: 24px 0 0; max-width: 660px; font-size: clamp(18px, 2vw, 22px); font-weight: 300; line-height: 1.5; }
+</style>

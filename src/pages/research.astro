@@ -1,0 +1,99 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import SubHeader from '../components/SubHeader.astro';
+import { tour } from '../data/site';
+
+const all = (await getCollection('papers', (p) => p.data.featured))
+  .map((p) => p.data)
+  .sort((a, b) => b.year - a.year || a.title.localeCompare(b.title));
+const groups = [
+  { id: 'papers', label: 'Papers', items: all.filter((p) => p.kind === 'paper') },
+  { id: 'theses', label: 'Theses & posters', items: all.filter((p) => p.kind !== 'paper') },
+].map((g) => ({ ...g, years: [...new Set(g.items.map((p) => p.year))] }));
+---
+<Base title="Research — Klaus Eckelt">
+  <SubHeader title="Research" intro="From medical visualization to cohorts, embeddings and provenance — the work behind my PhD at JKU Linz." />
+  <p class="wrap mono docs"><a href="/CV.pdf">Curriculum vitae</a> · <a href="/2023-Pre-Defense.pdf">Research summary</a></p>
+
+  <section id="tour" class="band wrap">
+    <div class="head">
+      <h2 class="label">The tour — zooming in</h2>
+      <!-- TODO: link to the scrollytelling tour once it exists -->
+    </div>
+    <ol class="tour">
+      {tour.map((t) => (
+        <li>
+          <div class="scale"><span style={`width:${t.bar}px`}></span><small>{t.scale}</small></div>
+          <strong>{t.title}</strong>
+          <span class="mono">{t.meta}</span>
+        </li>
+      ))}
+    </ol>
+  </section>
+
+  {groups.map((g) => (
+    <section id={g.id} class="wrap papers">
+      <h2 class="label">{g.label}</h2>
+      {g.years.map((y) => (
+        <div class="year">
+          <span class="label">{y}</span>
+          <div class="items">
+            {g.items.filter((p) => p.year === y).map((p) => (
+              <article>
+                <h3>{p.pdf || p.doi ? <a href={p.pdf ?? `https://doi.org/${p.doi}`}>{p.title}</a> : p.title}</h3>
+                <p>{p.summary}</p>
+                <span class="mono">{p.venue}</span>
+                <nav class="links mono" aria-label={`${p.title} links`}>
+                  {p.pdf && <a href={p.pdf}>PDF</a>}
+                  {p.doi && <a href={`https://doi.org/${p.doi}`}>DOI</a>}
+                  {p.links.map((l) => <a href={l.href}>{l.label}</a>)}
+                </nav>
+              </article>
+            ))}
+          </div>
+        </div>
+      ))}
+    </section>
+  ))}
+
+  <section class="wrap teaching">
+    <h2 class="label">Teaching</h2>
+    <p>Visual Analytics, Information Visualization, Computer Graphics and Explainable AI at JKU Linz (2018–2023). Visualisation in the Business Analytics MSc at Imperial College Business School (2019–2021).</p>
+  </section>
+</Base>
+
+<style>
+  .band { margin-top: 120px; }
+  .label { margin: 0; text-transform: uppercase; font-weight: 400; }
+  .tour { list-style: none; margin: 40px 0 0; padding: 0; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 20px; }
+  .tour li { display: flex; flex-direction: column; gap: 10px; }
+  .scale { display: flex; align-items: center; gap: 8px; }
+  .scale span { height: 2px; background: var(--ink); }
+  .scale small { font-family: var(--font-pixel); font-size: 10px; color: var(--muted); }
+  .tour strong { margin-top: 8px; font-size: 20px; font-weight: 500; letter-spacing: -0.01em; }
+  .tour .mono { font-size: 12px; line-height: 1.5; }
+
+  .papers { padding-top: 120px; display: flex; flex-direction: column; gap: 64px; }
+  .year { display: grid; grid-template-columns: 2fr 10fr; gap: 24px; }
+  .year > .label { padding-top: 8px; }
+  .items { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 44px 56px; }
+  article h3 { margin: 0; font-size: 22px; font-weight: 500; letter-spacing: -0.01em; }
+  article h3 a { text-decoration: none; }
+  article p { margin: 8px 0; font-size: 16px; line-height: 1.55; opacity: 0.85; }
+  article .mono { font-size: 12px; }
+  .links { display: flex; flex-wrap: wrap; gap: 4px 16px; margin-top: 6px; }
+  .links a:hover { color: var(--accent); }
+  .docs { margin: 24px 0 0; }
+  #theses { padding-top: 96px; }
+
+  .teaching { padding-top: 120px; display: grid; grid-template-columns: 2fr 10fr; gap: 24px; }
+  .teaching .label { padding-top: 6px; }
+  .teaching p { margin: 0; max-width: 64ch; font-size: 18px; font-weight: 300; line-height: 1.6; }
+
+  @media (max-width: 860px) {
+    .tour { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 36px; }
+    .year, .teaching { grid-template-columns: 1fr; gap: 16px; }
+    .items { grid-template-columns: 1fr; gap: 32px; }
+  }
+</style>

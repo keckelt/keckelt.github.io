@@ -1,23 +1,10 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bookmarks — Klaus Eckelt</title>
-  <meta name="robots" content="noindex">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&family=Silkscreen&display=swap">
-</head>
-<body>
-  <header class="wrap nav nav--sub">
-    <a class="nav__home" href="/">← KLAUS <span class="surname">ECKELT</span></a>
-  </header>
-  <section class="wrap intro">
-    <h1 class="display display--small">Bookmarks</h1>
-  </section>
-  <main class="wrap bookmarks">
+---
+import Base from '../layouts/Base.astro';
+import SubHeader from '../components/SubHeader.astro';
+---
+<Base title="Bookmarks — Klaus Eckelt">
+  <SubHeader title="Bookmarks" intro="Tools and pages I keep coming back to." />
+  <div class="wrap bookmarks">
     <ul>
       <li style="list-style: none"><h2>Development</h2>
         <ul>
@@ -162,7 +149,7 @@ grep " a [AEIOUaeiuo\\]" main.tex       # find wrong articles
 egrep "(\b[a-zA-Z]+) \1\b" main.tex     # double words
 
 egrep "(et\. al)|(et al[^\.])" main.tex # et al spelled wrongly
-egrep "\s\\\\cite{" main.tex            # cite without nbsp
+egrep "\s\\\\cite{'{'}" main.tex            # cite without nbsp
 egrep "\w+, \w+ and " main.tex          # find missing oxford comma 
 egrep "\w+, \w+, and " main.tex         # find oxford commas
 
@@ -234,10 +221,12 @@ grep "[^.][^A-Z]\. [a-z]" main.text     # Missing capital for first word in new 
         </li>
       </ul>
     </li>
-</main>
-  <footer class="wrap footer">
-    <a href="mailto:klaus@eckelt.info">klaus@eckelt.info</a>
-  </footer>
-  <script type="module" src="/src/main.ts"></script>
-</body>
-</html>
+  </div>
+</Base>
+
+<style>
+  .bookmarks { padding-top: 48px; font-size: 16px; line-height: 1.6; overflow-wrap: anywhere; }
+  .bookmarks :global(pre) { white-space: pre-wrap; }
+  .bookmarks :global(ul) { padding-left: 1.2em; }
+  .bookmarks :global(h2) { font-family: var(--font-pixel); font-weight: 400; font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); margin: 48px 0 8px; }
+</style>

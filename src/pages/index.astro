@@ -1,0 +1,41 @@
+---
+import Base from '../layouts/Base.astro';
+import EmbeddingFigure from '../components/EmbeddingFigure.astro';
+import { links } from '../data/site';
+---
+<Base title="Klaus Eckelt">
+  <div class="card wrap">
+    <h1 class="pixel">Klaus<br /><span class="surname">Eckelt</span></h1>
+    <div class="grid">
+      <div class="text">
+        <p class="intro">I build visual analytics for pharma R&amp;D. Mostly I care about resolution — single-cell and spatial.</p>
+        <p class="mono">Engineering manager at datavisyn<br />PhD, JKU Linz</p>
+      </div>
+      <EmbeddingFigure />
+    </div>
+    <nav aria-label="Main">{links.map((l) => <a href={l.href}>{l.label}</a>)}</nav>
+  </div>
+</Base>
+
+<style>
+  .card { padding-top: clamp(72px, 14vw, 150px); }
+  h1 { margin: 0; font-size: clamp(52px, 9vw, 104px); line-height: 0.95; text-transform: uppercase; }
+  .grid {
+    display: grid; grid-template-columns: 5fr 1fr 6fr; align-items: end;
+    padding-block: clamp(32px, 6vw, 80px) clamp(40px, 7vw, 90px);
+  }
+  .text { grid-column: 1; display: flex; flex-direction: column; gap: 26px; padding-bottom: 36px; }
+  .grid > :global(figure) { grid-column: 3; }
+  .intro { margin: 0; font-size: clamp(19px, 2.2vw, 24px); font-weight: 300; line-height: 1.45; max-width: 34ch; }
+  .surname { color: var(--accent); }
+  .mono { margin: 0; }
+  nav { display: flex; flex-wrap: wrap; gap: 12px 40px; border-top: 1px solid var(--rule); padding-top: 28px; font-size: 18px; }
+
+  @media (max-width: 860px) {
+    .grid { grid-template-columns: 1fr; gap: 32px; }
+    .text, .grid > :global(figure) { grid-column: 1; }
+    .text { padding-bottom: 0; }
+    nav { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; }
+    nav a { padding-block: 12px; }
+  }
+</style>

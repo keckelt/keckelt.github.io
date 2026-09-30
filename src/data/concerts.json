@@ -1,0 +1,825 @@
+[
+ {
+  "date": "2004-05-02",
+  "venue": "Flex",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Backyard Babies",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2008-12-08",
+  "venue": "Flex",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Airbourne",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2009-03-20",
+  "venue": "Flex",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Danko Jones",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2011-04-11",
+  "venue": "Backstage Halle",
+  "city": "Munich",
+  "acts": [
+   {
+    "band": "69 Eyes",
+    "headliner": true
+   },
+   {
+    "band": "Hardcore Superstar",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2011-10-18",
+  "venue": "Gasometer",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Alice Cooper",
+    "headliner": true
+   },
+   {
+    "band": "The Treatment",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2012-01-31",
+  "venue": "Gasometer",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Dropkick Murphys",
+    "headliner": true
+   },
+   {
+    "band": "Frank Turner",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2012-03-04",
+  "venue": "Szene Wien",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Black Stone Cherry",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2012-06-26",
+  "venue": "Wiener Stadthalle",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Ozzy Osbourne and Friends",
+    "headliner": true
+   },
+   {
+    "band": "Alkbottle",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2012-10-28",
+  "venue": "Gasometer",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Easy",
+    "headliner": false
+   },
+   {
+    "band": "Steel Panther",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2012-10-29",
+  "venue": "Arena Wien",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Danko Jones",
+    "headliner": true
+   },
+   {
+    "band": "Bombus",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2012-11-14",
+  "venue": "Gasometer",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Trivium",
+    "headliner": true
+   },
+   {
+    "band": "As I Lay Dying",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2012-12-21",
+  "venue": "Posthof",
+  "city": "Linz",
+  "acts": [
+   {
+    "band": "The Sorrow",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2013-01-28",
+  "venue": "Gasometer",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Dropkick Murphys",
+    "headliner": true
+   },
+   {
+    "band": "Frank Turner",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2013-02-10",
+  "venue": "Gasometer",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Slash",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2013-03-14",
+  "venue": "Arena Wien",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "The Darkness",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2013-05-17",
+  "venue": "Pferderennbahn Krieau",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Bon Jovi",
+    "headliner": true
+   },
+   {
+    "band": "Christina Stürmer",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2013-11-09",
+  "venue": "Gasometer",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Airbourne",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2013-11-10",
+  "venue": "Szene Wien",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Buckcherry",
+    "headliner": true
+   },
+   {
+    "band": "Hardcore Superstar",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2013-11-22",
+  "venue": "Wiener Stadthalle",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Avenged Sevenfold",
+    "headliner": true
+   },
+   {
+    "band": "Five Finger Death Punch",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2013-11-26",
+  "venue": "Ottakringer Brauerei",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Ugly Kid Joe",
+    "headliner": true
+   },
+   {
+    "band": "Skid Row",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2014-04-16",
+  "venue": "Chelsea",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Avatar",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2014-05-07",
+  "venue": "Chelsea",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Reckless Love",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2014-07-02",
+  "venue": "Burg Clam",
+  "city": "Klam",
+  "acts": [
+   {
+    "band": "Thirty Seconds To Mars",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2014-11-19",
+  "venue": "Wiener Stadthalle",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Slash",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2014-11-30",
+  "venue": "Arena Wien",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Rival Sons",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2015-03-25",
+  "venue": "Arena Wien",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Danko Jones",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2015-11-09",
+  "venue": "Szene Wien",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Backyard Babies",
+    "headliner": true
+   },
+   {
+    "band": "Graveyard",
+    "headliner": true
+   },
+   {
+    "band": "Imperial State Electric",
+    "headliner": false
+   },
+   {
+    "band": "Heavy Tiger",
+    "headliner": false
+   },
+   {
+    "band": "Junkstars",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2016-04-23",
+  "venue": "Wiener Stadthalle",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "BossHoss",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2017-01-20",
+  "venue": "Gasometer",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Dropkick Murphys",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2017-11-27",
+  "venue": "Wiener Stadthalle",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Alice Cooper",
+    "headliner": true
+   },
+   {
+    "band": "Michael Monroe",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2018-02-20",
+  "venue": "Gasometer",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Scooter",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2018-04-19",
+  "venue": "Gasometer",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Machine Head",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2018-06-30",
+  "venue": "Burg Clam",
+  "city": "Klam",
+  "acts": [
+   {
+    "band": "Hollywood Vampires",
+    "headliner": true
+   },
+   {
+    "band": "The Darkness",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2018-11-06",
+  "venue": "Arena Wien",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Powerwolf",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2018-11-16",
+  "venue": "Arena Wien",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Adam Angst",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2019-02-10",
+  "venue": "Gasometer",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Slash",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2019-03-01",
+  "venue": "Backstage Werk",
+  "city": "Munich",
+  "acts": [
+   {
+    "band": "The Bones",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2019-03-27",
+  "venue": "Wiener Stadthalle",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "BossHoss",
+    "headliner": true
+   },
+   {
+    "band": "Seasick Steve",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2019-04-20",
+  "venue": "Flex",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Backyard Babies",
+    "headliner": true
+   },
+   {
+    "band": "Thundermother",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2019-05-29",
+  "venue": "Wiener Stadthalle",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "KISS",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2019-06-29",
+  "venue": "Burg Clam",
+  "city": "Klam",
+  "acts": [
+   {
+    "band": "ZZ Top",
+    "headliner": true
+   },
+   {
+    "band": "Foreigner",
+    "headliner": true
+   },
+   {
+    "band": "Richie Kotzen",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2019-07-17",
+  "venue": "Ernst-Happel-Stadion",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Skid Row",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2019-08-02",
+  "venue": "Burg Clam",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Scorpions",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2019-11-17",
+  "venue": "Szene Wien",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Beast in Black",
+    "headliner": true
+   },
+   {
+    "band": "Myrath",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2019-11-29",
+  "venue": "Gasometer",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Alter Bridge",
+    "headliner": true
+   },
+   {
+    "band": "Shinedown",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2020-02-22",
+  "venue": "Gasometer",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Battle Beast",
+    "headliner": false
+   },
+   {
+    "band": "Serious Black",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2021-10-23",
+  "venue": "Tabakfabrik",
+  "city": "Linz",
+  "acts": [
+   {
+    "band": "Doro",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2022-04-12",
+  "venue": "Szene Wien",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Dynazty",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2022-06-29",
+  "venue": "Gasometer",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Hammerfall",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2022-07-08",
+  "venue": "Burg Clam",
+  "city": "Klam",
+  "acts": [
+   {
+    "band": "Deep Purple",
+    "headliner": true
+   },
+   {
+    "band": "Uriah Heep",
+    "headliner": false
+   },
+   {
+    "band": "The Sweet",
+    "headliner": false
+   },
+   {
+    "band": "Inner Circle",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2022-07-10",
+  "venue": "Stadion",
+  "city": "Wiener Neustadt",
+  "acts": [
+   {
+    "band": "Iron Maiden",
+    "headliner": true
+   },
+   {
+    "band": "Airbourne",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2022-07-13",
+  "venue": "Ernst-Happel-Stadion",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Guns N' Roses",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2022-07-23",
+  "venue": "Burg Clam",
+  "city": "Klam",
+  "acts": [
+   {
+    "band": "Judas Priest",
+    "headliner": true
+   },
+   {
+    "band": "Saxon",
+    "headliner": true
+   },
+   {
+    "band": "Beyond The Black",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2022-08-27",
+  "venue": "Ippodromo San Siro",
+  "city": "Milan",
+  "acts": [
+   {
+    "band": "Beast in Black",
+    "headliner": false
+   },
+   {
+    "band": "Sabaton",
+    "headliner": true
+   },
+   {
+    "band": "Helloween",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2022-09-04",
+  "venue": "SimmCity",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Battle Beast",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2022-09-17",
+  "venue": "Wiener Stadthalle",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Halo Effect",
+    "headliner": false
+   },
+   {
+    "band": "Amon Amarth",
+    "headliner": true
+   },
+   {
+    "band": "Machine Head",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2022-09-18",
+  "venue": "Chelsea",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Reckless Love",
+    "headliner": true
+   },
+   {
+    "band": "Supernova Plasmajets",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2022-09-26",
+  "venue": "Gasometer",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Billy Idol",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2022-12-09",
+  "venue": "Gasometer",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Airbourne",
+    "headliner": true
+   },
+   {
+    "band": "Blues Pills",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2023-04-12",
+  "venue": "Szene Wien",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Feuerschwanz",
+    "headliner": true
+   },
+   {
+    "band": "Warkings",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2023-05-07",
+  "venue": "Wiener Stadthalle",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Sabaton",
+    "headliner": true
+   }
+  ]
+ }
+]

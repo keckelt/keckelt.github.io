@@ -2,9 +2,10 @@ name: Build and deploy
 
 on:
   push:
-    branches:
-      - main
-  workflow_dispatch:
+    branches: [main]
+  schedule:
+    - cron: '0 4 * * *'   # Nightly: refresh concerts from the sheet
+  workflow_dispatch:       # "Run workflow" button for an instant refresh
 
 permissions:
   contents: write
@@ -17,26 +18,21 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v5
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
           node-version: 24
           cache: npm
-
-      - name: Install and build
-        run: |
-          npm ci
-          npm run build
-
+      - run: npm ci
+      - run: npm run build
+        env:
+          CONCERTS_CSV_URLS: ${{ secrets.CONCERTS_CSV_URLS }}
+      # Pages is set to serve the gh-pages branch; public/CNAME keeps the domain
       - name: Deploy to the gh-pages branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: gh-pages
           build_dir: dist
-          fqdn: eckelt.info
           jekyll: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,82 @@
+---
+// "Linked cohorts": every cell appears twice — in the embedding (above the
+// diagonal) and in the tissue (below). Cohort A is picked in the tissue,
+// cohort B in the embedding. Generated at build time: no runtime JS.
+// Static "both" state; the interactive version is planned for the tour.
+const W = 560, H = 480;
+const rnd = (i: number) => { const x = Math.sin(i * 12.9898 + 78.233) * 43758.5453; return x - Math.floor(x); };
+const fr = (x: number, y: number) => {
+  const dx = x - 280, dy = y - 240, a = Math.atan2(dy, dx);
+  const r = 205 + 22 * Math.sin(3 * a + 0.6) + 14 * Math.cos(5 * a);
+  return Math.sqrt(dx * dx * 0.85 + dy * dy * 1.15) / r;
+};
+const region = (f: number) => (f < 0.42 ? 3 : f < 0.72 ? 2 : 1); // 1 rim, 2 middle, 3 core
+const above = (x: number, y: number) => x / W + y / H < 1;
+const ell = (x: number, y: number, cx: number, cy: number, rx: number, ry: number, rot: number) => {
+  const c = Math.cos(rot), s = Math.sin(rot), dx = x - cx, dy = y - cy;
+  const u = (dx * c + dy * s) / rx, v = (-dx * s + dy * c) / ry;
+  return u * u + v * v;
+};
+const clusters: Record<number, number[]> = { 1: [165, 115, 110, 52, 0.45], 2: [315, 80, 72, 38, -0.2], 3: [105, 270, 55, 38, 0.3] };
+const mix: Record<number, number[]> = { 1: [0.7, 0.9], 2: [0.25, 0.85], 3: [0.1, 0.35] }; // cell-type mix per region
+
+type Cell = { tx: number; ty: number; ux?: number; uy?: number; cls: string };
+const cells: Cell[] = [];
+for (let i = 0; i < 20000 && cells.length < 720; i++) {
+  const x = rnd(i) * 556 + 2, y = rnd(i + 5000) * 476 + 2;
+  if (above(x, y) || fr(x, y) >= 1) continue;
+  const reg = region(fr(x, y)), t = rnd(i + 9000);
+  const type = t < mix[reg][0] ? 1 : t < mix[reg][1] ? 2 : 3;
+  const [cx, cy, rx, ry, rot] = clusters[type];
+  const cell: Cell = { tx: x, ty: y, cls: 'rest' };
+  for (let k = 0; k < 200; k++) {
+    const ux = cx + (rnd(cells.length * 7 + k + 30000) * 2 - 1) * rx;
+    const uy = cy + (rnd(cells.length * 7 + k + 40000) * 2 - 1) * rx;
+    if (ell(ux, uy, cx, cy, rx, ry, rot) < 1 && above(ux, uy)) { cell.ux = ux; cell.uy = uy; break; }
+  }
+  const inB = cell.ux !== undefined && ell(cell.ux, cell.uy!, 105, 270, 64, 47, 0.3) < 1;
+  const inA = Math.hypot(x - 385, y - 330) < 72;
+  cell.cls = inB ? 'b' : inA ? 'a' : 'rest';
+  cells.push(cell);
+}
+// draw grey cells first so cohorts sit on top
+const ordered = [...cells.filter((c) => c.cls === 'rest'), ...cells.filter((c) => c.cls !== 'rest')];
+const f1 = (n: number) => n.toFixed(1);
+---
+<figure class="resolution">
+  <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-labelledby="res-cap">
+    {ordered.map((c) => (
+      <g class={c.cls}>
+        <circle cx={f1(c.tx)} cy={f1(c.ty)} r="2.5" />
+        {c.ux !== undefined && <circle cx={f1(c.ux)} cy={f1(c.uy!)} r="2.5" />}
+      </g>
+    ))}
+    <line x1="0" y1={H} x2={W} y2="0" />
+    <circle class="pick-a" cx="385" cy="330" r="72" />
+    <ellipse class="pick-b" cx="105" cy="270" rx="64" ry="47" transform="rotate(17 105 270)" />
+    <text class="lab-a" x="404" y="418">A · picked in tissue</text>
+    <text class="lab-b" x="30" y="334">B · picked in embedding</text>
+  </svg>
+  <figcaption id="res-cap" class="caps">
+    <span>Embedding</span><span>Two cohorts, two spaces</span><span>Tissue</span>
+  </figcaption>
+</figure>
+
+<style>
+  .resolution { margin: 0; display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 560px; }
+  svg { display: block; width: 100%; height: auto; }
+  .rest circle { fill: var(--faint); }
+  .a circle { fill: var(--accent); }
+  .b circle { fill: var(--ink); }
+  line { stroke: var(--ink); stroke-width: 1; }
+  .pick-a, .pick-b { fill: none; stroke-width: 1.5; stroke-dasharray: 4 4; }
+  .pick-a { stroke: var(--accent); }
+  .pick-b { stroke: var(--ink); }
+  text { font-family: var(--font-pixel); font-size: 9px; letter-spacing: 0.06em; text-transform: uppercase; }
+  .lab-a { fill: var(--accent); }
+  .lab-b { fill: var(--ink); }
+  .caps {
+    display: flex; justify-content: space-between; gap: 12px;
+    font-family: var(--font-pixel); font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted);
+  }
+</style>
