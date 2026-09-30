@@ -2,8 +2,9 @@
 import '../styles/global.css';
 import { social, email } from '../data/site';
 
-interface Props { title: string; description?: string }
-const { title, description = 'Klaus Eckelt builds visual analytics for pharma R&D at datavisyn.' } = Astro.props;
+// `fit`: lock the page to one screen, so everything is visible without scrolling
+interface Props { title: string; description?: string; fit?: boolean }
+const { title, fit = false, description = 'Klaus Eckelt builds visual analytics for pharma R&D at datavisyn.' } = Astro.props;
 ---
 <!doctype html>
 <html lang="en">
@@ -28,7 +29,7 @@ const { title, description = 'Klaus Eckelt builds visual analytics for pharma R&
       } catch (e) {}
     </script>
   </head>
-  <body>
+  <body class:list={[{ fit }]}>
     <button class="theme-toggle" type="button" aria-label="Switch colour theme">
       <span aria-hidden="true">◐</span>
     </button>
@@ -70,6 +71,13 @@ const { title, description = 'Klaus Eckelt builds visual analytics for pharma R&
       }
       footer nav { display: flex; flex-wrap: wrap; gap: 12px 28px; }
       footer nav a { text-decoration: none; }
+
+      /* One-screen pages; short screens (e.g. phones held sideways) scroll as usual */
+      @media (min-height: 521px) {
+        body.fit { height: 100vh; height: 100svh; min-height: 0; }
+        body.fit main { min-height: 0; display: flex; flex-direction: column; }
+        body.fit footer { padding-block: clamp(16px, 3svh, 40px) clamp(20px, 4svh, 56px); }
+      }
     </style>
   </body>
 </html>
