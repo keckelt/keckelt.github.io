@@ -15,7 +15,8 @@ Colour study ("Resolution in Colour"): https://claude.ai/artifact/AakzoQPgoekHWQ
 - **Hosting:** still the `gh-pages` branch (Pages source unchanged), built by the workflow on push and nightly.
 - **Releases:** date tags `YYYY.MM.DD`. `2025.01.29` is the old site.
 - **Account:** all work on this repo goes through the private `keckelt` GitHub account, never the work account.
-- **Links:** LinkedIn and Google Scholar are the prominent profile links (18 px in every footer, with ↗). Mastodon is dropped. GitHub appears only in the Making section of /live, next to the side projects.
+- **Links:** CV, LinkedIn and Google Scholar are the main links, right under the home intro (and in every subpage footer). Research, Making and Live are secondary: the quieter row at the bottom of home and the subpage header. Mastodon is dropped. GitHub appears only on /making.
+- **Pages:** /research is the papers plus the tour, /live only the concert log, /making every side project (CoralDuck, WordFest, more to come; edit `projects` in `src/data/site.ts`).
 - **PhD:** completed 28 September 2026. Thesis: *Visualizing Differences: Interactive Characterization and Comparison of High-Dimensional Data Sets*. The home sentence now comes from it instead of the "resolution" placeholder: single cells in tissue, plus defining, understanding and comparing groups (the thesis's curate, characterize, compare) and whether differences are real. Wording rule: plain words (defining, understanding, comparing) on the home page for industry readers; the thesis terms (curating, characterizing, comparing) on /research for academics.
 
 ---
@@ -199,6 +200,6 @@ The old site (eckelt.info) also lists posters, theses and talks. Keep the old `/
 5. Decide on a CV/work page: a simple page, not business-heavy.
 6. Add an OG image, 404 page and privacy-friendly stats (the old site used counter.dev).
 7. Optionally replace the generated figure with a real spatial dataset (true cell positions, types and UMAP coordinates).
-8. Later, fill the art and music slots on `/live#making`.
+8. Later, add art and music to `/making` (projects list in `src/data/site.ts`).
 
 **Working with Klaus:** show options side by side, then let him cherry-pick. He gives clear likes and dislikes. Keep it minimal and airy; when in doubt, remove detail.

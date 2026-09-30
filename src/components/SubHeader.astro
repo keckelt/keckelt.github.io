@@ -1,5 +1,6 @@
 ---
-import { links } from '../data/site';
+import { primary, sections } from '../data/site';
+const links = [...sections, primary[0]]; // Research, Making, Live, CV
 interface Props { title: string; intro: string }
 const { title, intro } = Astro.props;
 ---

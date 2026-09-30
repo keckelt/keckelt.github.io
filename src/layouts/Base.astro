@@ -3,8 +3,9 @@ import '../styles/global.css';
 import { social, email } from '../data/site';
 
 // `fit`: lock the page to one screen, so everything is visible without scrolling
-interface Props { title: string; description?: string; fit?: boolean }
-const { title, fit = false, description = 'Klaus Eckelt builds visual analytics for pharma R&D at datavisyn.' } = Astro.props;
+// `showSocial`: footer profile links; the home page shows them under the intro instead
+interface Props { title: string; description?: string; fit?: boolean; showSocial?: boolean }
+const { title, fit = false, showSocial = true, description = 'Klaus Eckelt builds visual analytics for pharma R&D at datavisyn.' } = Astro.props;
 ---
 <!doctype html>
 <html lang="en">
@@ -38,9 +39,9 @@ const { title, fit = false, description = 'Klaus Eckelt builds visual analytics 
     </main>
     <footer class="wrap">
       <a href={`mailto:${email}`}>{email}</a>
-      <nav aria-label="Elsewhere">
+      {showSocial && <nav aria-label="Profiles">
         {social.map((s) => <a class="ext" href={s.href}><span class="t">{s.label}</span><span class="arrow" aria-hidden="true">↗</span></a>)}
-      </nav>
+      </nav>}
     </footer>
 
     <script>
@@ -72,6 +73,8 @@ const { title, fit = false, description = 'Klaus Eckelt builds visual analytics 
       /* LinkedIn and Scholar: same size as the main links, so they stand out */
       footer nav { display: flex; flex-wrap: wrap; gap: 8px 40px; font-size: 18px; }
       footer nav a { min-height: 44px; display: inline-flex; align-items: center; }
+      /* Phones: never squeeze a fit page below what its content needs; shorter screens scroll a little */
+      @media (max-width: 600px) { body.fit { --fit-min: 760px; } }
       @media (max-width: 600px) and (max-height: 760px) {
         footer { row-gap: 0; }
         footer nav { font-size: 16px; }
@@ -79,7 +82,7 @@ const { title, fit = false, description = 'Klaus Eckelt builds visual analytics 
 
       /* One-screen pages; short screens (e.g. phones held sideways) scroll as usual */
       @media (min-height: 521px) {
-        body.fit { height: 100vh; height: 100svh; min-height: 0; }
+        body.fit { height: max(100vh, var(--fit-min, 0px)); height: max(100svh, var(--fit-min, 0px)); min-height: 0; }
         body.fit main { min-height: 0; display: flex; flex-direction: column; }
         body.fit footer { padding-block: clamp(16px, 3svh, 40px) clamp(20px, 4svh, 56px); }
       }

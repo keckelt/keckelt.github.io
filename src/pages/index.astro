@@ -1,21 +1,26 @@
 ---
 import Base from '../layouts/Base.astro';
 import EmbeddingFigure from '../components/EmbeddingFigure.astro';
-import { links } from '../data/site';
+import { primary, sections } from '../data/site';
 ---
-<Base title="Klaus Eckelt" fit>
+<Base title="Klaus Eckelt" fit showSocial={false}>
   <div class="card wrap">
     <h1 class="pixel">Klaus<br /><span class="surname">Eckelt</span></h1>
     <div class="grid">
       <div class="text">
         <p class="intro">I build visual analytics for pharma R&amp;D, down to single cells in tissue. My research is about defining, understanding and comparing groups, and whether their differences are real.</p>
         <p class="mono">Engineering manager at datavisyn<br />PhD, JKU Linz, 2026</p>
+        <nav class="primary" aria-label="Profiles">
+          {primary.map((l) => l.external
+            ? <a class="ext" href={l.href}><span class="t">{l.label}</span><span class="arrow" aria-hidden="true">↗</span></a>
+            : <a href={l.href}>{l.label}</a>)}
+        </nav>
       </div>
       <div class="fig">
         <EmbeddingFigure />
       </div>
     </div>
-    <nav aria-label="Main">{links.map((l) => <a href={l.href}>{l.label}</a>)}</nav>
+    <nav class="sections" aria-label="Sections">{sections.map((l) => <a href={l.href}>{l.label}</a>)}</nav>
   </div>
 </Base>
 
@@ -39,23 +44,27 @@ import { links } from '../data/site';
   .fig { grid-column: 3; height: 100%; min-height: 0; container-type: size; display: flex; align-items: flex-end; }
   .fig :global(figure) { width: min(100cqw, calc((100cqh - 24px) * 560 / 480), 560px); }
 
-  nav { display: flex; flex-wrap: wrap; gap: 12px 40px; border-top: 1px solid var(--rule); padding-top: clamp(16px, 3svh, 28px); font-size: 18px; }
+  /* Main links: CV and profiles, right under the intro */
+  .primary { display: flex; flex-wrap: wrap; gap: 4px 32px; font-size: 20px; }
+  .primary a { min-height: 44px; display: inline-flex; align-items: center; }
+
+  /* Secondary: the sections, quieter than the main links */
+  .sections { display: flex; flex-wrap: wrap; gap: 12px 40px; border-top: 1px solid var(--rule); padding-top: clamp(16px, 3svh, 28px); font-size: 16px; }
+  .sections a { text-decoration: none; min-height: 44px; display: inline-flex; align-items: center; }
+  .sections a:hover { text-decoration: underline; }
 
   @media (max-width: 860px) {
     .grid { grid-template-columns: 1fr; grid-template-rows: auto minmax(0, 1fr); gap: clamp(16px, 3svh, 32px); }
     .text, .fig { grid-column: 1; }
     .text { padding-bottom: 0; gap: clamp(12px, 2svh, 26px); }
-    .fig { min-height: 120px; }
-    nav { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; }
-    nav a { padding-block: 12px; }
   }
 
   /* Phones: one row of links and tighter spacing, so the figure keeps a useful size */
   @media (max-width: 600px) {
     .card { padding-top: clamp(24px, 7svh, 72px); }
     .grid { padding-block: clamp(16px, 3svh, 32px) clamp(12px, 2svh, 24px); }
-    nav { display: flex; justify-content: space-between; gap: 8px; padding-top: 4px; font-size: 17px; }
-    nav a { min-height: 44px; display: inline-flex; align-items: center; padding-block: 0; }
+    .primary { font-size: 17px; gap: 0 20px; flex-wrap: nowrap; white-space: nowrap; }
+    .sections { gap: 8px 32px; padding-top: 4px; }
   }
 
   /* Short phones: smaller text, so the figure keeps a readable size */

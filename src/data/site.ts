@@ -1,20 +1,41 @@
-// Main links, shared by the home card and the subpage header.
-export const links = [
-  { label: 'Tour', href: '/research#tour' },
-  { label: 'Research', href: '/research' },
-  { label: 'Making', href: '/live#making' },
-  { label: 'Live', href: '/live' },
-  { label: 'CV', href: '/CV.pdf' }, // Same URL as the old site
+// Main links: the professional profiles, right under the intro on the home page
+export const primary = [
+  { label: 'CV', href: '/CV.pdf', external: false }, // Same URL as the old site
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/klaus-eckelt', external: true },
+  { label: 'Google Scholar', href: 'https://scholar.google.de/citations?user=_wMz-ewAAAAJ', external: true },
 ];
 
-// Professional profiles, shown prominently in every footer
-export const social = [
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/klaus-eckelt' },
-  { label: 'Google Scholar', href: 'https://scholar.google.de/citations?user=_wMz-ewAAAAJ' },
+// Secondary links: the sections of the site
+export const sections = [
+  { label: 'Research', href: '/research' }, // Papers and the tour through them
+  { label: 'Making', href: '/making' },     // Side projects
+  { label: 'Live', href: '/live' },         // Concert log
 ];
 
-// Code lives with the side projects only (/live#making), not in the footer
+// Profiles shown in the footer of every subpage
+export const social = primary.filter((l) => l.external);
+
+// Code lives with the side projects only (/making), not in the footer
 export const github = 'https://github.com/keckelt/';
+
+// Side projects on /making, newest first. Add new ones here.
+export const projects = [
+  {
+    title: 'CoralDuck',
+    text: 'Cohort comparison, serverless: DuckDB in the browser.',
+    href: 'https://coralduck.eckelt.info',
+    links: [],
+  },
+  {
+    title: 'WordFest',
+    text: 'Word clouds that read like a festival line-up: words stay in reading direction instead of being rotated.',
+    href: 'https://github.com/keckelt/wordfest',
+    links: [
+      { label: 'GitHub', href: 'https://github.com/keckelt/wordfest' },
+      { label: 'npm', href: 'https://www.npmjs.com/package/wordfest' },
+    ],
+  },
+];
 
 export const email = 'klaus@eckelt.info';
 

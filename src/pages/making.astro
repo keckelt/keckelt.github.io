@@ -1,0 +1,42 @@
+---
+import Base from '../layouts/Base.astro';
+import SubHeader from '../components/SubHeader.astro';
+import { projects, github } from '../data/site';
+---
+<Base title="Making — Klaus Eckelt" description="Side projects by Klaus Eckelt: CoralDuck, WordFest and more.">
+  <SubHeader title="Making" intro="Things I build when I am not at work." />
+
+  <section class="wrap making">
+    <div class="head">
+      <h2 class="label">Side projects</h2>
+      <a class="code ext" href={github}><span class="t">Code on GitHub</span><span class="arrow" aria-hidden="true">↗</span></a>
+    </div>
+    <div class="cols">
+      {projects.map((p) => (
+        <article>
+          <h3><a href={p.href}>{p.title}</a></h3>
+          <p>{p.text}</p>
+          {p.links.length > 0 && (
+            <nav class="links mono" aria-label={`${p.title} links`}>
+              {p.links.map((l) => <a href={l.href}>{l.label}</a>)}
+            </nav>
+          )}
+        </article>
+      ))}
+    </div>
+  </section>
+</Base>
+
+<style>
+  .label { margin: 0; text-transform: uppercase; font-weight: 400; }
+  .making { padding-top: clamp(72px, 10vw, 120px); }
+  .head { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; align-items: baseline; }
+  .code { font-size: 16px; }
+  .cols { margin-top: 28px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+  article { border-top: 1px solid var(--ink); padding-top: 20px; }
+  h3 { margin: 0; font-size: 22px; font-weight: 500; letter-spacing: -0.01em; }
+  article p { margin: 12px 0 0; font-size: 16px; line-height: 1.55; color: var(--muted); }
+  .links { display: flex; flex-wrap: wrap; gap: 4px 16px; margin-top: 12px; font-size: 12px; }
+  .links a:hover { color: var(--accent); }
+  @media (max-width: 860px) { .cols { grid-template-columns: 1fr; gap: 32px; } }
+</style>
