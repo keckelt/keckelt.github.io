@@ -50,8 +50,7 @@ import { primary, sections } from '../data/site';
 
   /* Secondary: the sections, quieter than the main links */
   .sections { display: flex; flex-wrap: wrap; gap: 12px 40px; border-top: 1px solid var(--rule); padding-top: clamp(16px, 3svh, 28px); font-size: 16px; }
-  .sections a { text-decoration: none; min-height: 44px; display: inline-flex; align-items: center; }
-  .sections a:hover { text-decoration: underline; }
+  .sections a { min-height: 44px; display: inline-flex; align-items: center; }
 
   @media (max-width: 860px) {
     .grid { grid-template-columns: 1fr; grid-template-rows: auto minmax(0, 1fr); gap: clamp(16px, 3svh, 32px); }
