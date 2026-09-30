@@ -1,8 +1,743 @@
 [
  {
+  "date": "1999-05-29",
+  "venue": "Burg Clam",
+  "city": "Klam",
+  "acts": [
+   {
+    "band": "Brian Adams",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2003-04-03",
+  "venue": "Lehar Theater",
+  "city": "Bad Ischl",
+  "acts": [
+   {
+    "band": "The Bones",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2003-12-23",
+  "venue": "Gasometer",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Die Ärzte",
+    "headliner": true
+   }
+  ]
+ },
+ {
   "date": "2004-05-02",
   "venue": "Flex",
   "city": "Vienna",
+  "acts": [
+   {
+    "band": "Backyard Babies",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2004-07-10",
+  "venue": "Forestglade Festival",
+  "city": "Wiesen",
+  "acts": [
+   {
+    "band": "Wir Sind Helden",
+    "headliner": true
+   },
+   {
+    "band": "Cypress Hill",
+    "headliner": false
+   },
+   {
+    "band": "In Flames",
+    "headliner": false
+   },
+   {
+    "band": "Beatstakes",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2004-07-11",
+  "venue": "Forestglade Festival",
+  "city": "Wiesen",
+  "acts": [
+   {
+    "band": "Iggy & The Stooges",
+    "headliner": true
+   },
+   {
+    "band": "Oomph!",
+    "headliner": false
+   },
+   {
+    "band": "Turbonegro",
+    "headliner": false
+   },
+   {
+    "band": "Danko Jones",
+    "headliner": false
+   },
+   {
+    "band": "Electric Eel Shock",
+    "headliner": false
+   },
+   {
+    "band": "Mustasch",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2004-08-24",
+  "venue": "Two Days A Week Festival",
+  "city": "Wiesen",
+  "acts": [
+   {
+    "band": "Velvet Revolver",
+    "headliner": true
+   },
+   {
+    "band": "The Offspring",
+    "headliner": true
+   },
+   {
+    "band": "Bloodhound Gang",
+    "headliner": false
+   },
+   {
+    "band": "Dropkick Murphys",
+    "headliner": false
+   },
+   {
+    "band": "Flogging Molly",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2004-10-14",
+  "venue": "Stadtwerkstatt",
+  "city": "Linz",
+  "acts": [
+   {
+    "band": "Supersuckers",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2005-10-20",
+  "venue": "Planet Music",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Quireboys",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2006-07-14",
+  "venue": "Ernst-Happel-Stadion",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Rolling Stones",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2006-08-04",
+  "venue": "Wacken",
+  "city": "Wacken",
+  "acts": [
+   {
+    "band": "Danko Jones",
+    "headliner": false
+   },
+   {
+    "band": "Ektomorf",
+    "headliner": false
+   },
+   {
+    "band": "In Extremo",
+    "headliner": false
+   },
+   {
+    "band": "Children of Bodom",
+    "headliner": true
+   },
+   {
+    "band": "Amon Amarth",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2006-08-05",
+  "venue": "Wacken",
+  "city": "Wacken",
+  "acts": [
+   {
+    "band": "Arch Enemy",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2006-08-17",
+  "venue": "Frequency Festival",
+  "city": "Salzburg",
+  "acts": [
+   {
+    "band": "Muse",
+    "headliner": true
+   },
+   {
+    "band": "Wir Sind Helden",
+    "headliner": false
+   },
+   {
+    "band": "Lostprophets",
+    "headliner": false
+   },
+   {
+    "band": "Eagles of Death Metal",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2006-08-18",
+  "venue": "Frequency Festival",
+  "city": "Salzburg",
+  "acts": [
+   {
+    "band": "Franz Ferdinand",
+    "headliner": false
+   },
+   {
+    "band": "Prodigy",
+    "headliner": true
+   },
+   {
+    "band": "Mando Diao",
+    "headliner": false
+   },
+   {
+    "band": "Kaiser Chiefs",
+    "headliner": false
+   },
+   {
+    "band": "Arctic Monkeys",
+    "headliner": false
+   },
+   {
+    "band": "Bauchklang",
+    "headliner": false
+   },
+   {
+    "band": "Fettes Brot",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2006-09-27",
+  "venue": "Posthof",
+  "city": "Linz",
+  "acts": [
+   {
+    "band": "Bela B",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2006-12-30",
+  "venue": "Zenith",
+  "city": "Munich",
+  "acts": [
+   {
+    "band": "Schandmaul",
+    "headliner": true
+   },
+   {
+    "band": "New Model Army",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2007-06-22",
+  "venue": "Stadtplatz",
+  "city": "Steyr",
+  "acts": [
+   {
+    "band": "EAV",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2007-07-15",
+  "venue": "Nova Rock",
+  "city": "Nickelsdorf",
+  "acts": [
+   {
+    "band": "Hardcore Superstar",
+    "headliner": false
+   },
+   {
+    "band": "BossHoss",
+    "headliner": false
+   },
+   {
+    "band": "Papa Roach",
+    "headliner": false
+   },
+   {
+    "band": "Machine Head",
+    "headliner": false
+   },
+   {
+    "band": "In Extremo",
+    "headliner": false
+   },
+   {
+    "band": "Billy Talent",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2007-07-16",
+  "venue": "Nova Rock",
+  "city": "Nickelsdorf",
+  "acts": [
+   {
+    "band": "In Flames",
+    "headliner": false
+   },
+   {
+    "band": "Marylin Manson",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2007-07-17",
+  "venue": "Nova Rock",
+  "city": "Nickelsdorf",
+  "acts": [
+   {
+    "band": "Chimaira",
+    "headliner": false
+   },
+   {
+    "band": "DragonForce",
+    "headliner": false
+   },
+   {
+    "band": "Children of Bodom",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2007-08-02",
+  "venue": "Wacken",
+  "city": "Wacken",
+  "acts": [
+   {
+    "band": "Saxon",
+    "headliner": false
+   },
+   {
+    "band": "Rose Tattoo",
+    "headliner": false
+   },
+   {
+    "band": "Electric Eel Shock",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2007-08-03",
+  "venue": "Wacken",
+  "city": "Wacken",
+  "acts": [
+   {
+    "band": "Volbeat",
+    "headliner": false
+   },
+   {
+    "band": "Turbonegro",
+    "headliner": false
+   },
+   {
+    "band": "Blind Guardian",
+    "headliner": true
+   },
+   {
+    "band": "Dimmu Borgir",
+    "headliner": false
+   },
+   {
+    "band": "Schandmaul",
+    "headliner": false
+   },
+   {
+    "band": "Iced Earth",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2007-08-04",
+  "venue": "Wacken",
+  "city": "Wacken",
+  "acts": [
+   {
+    "band": "Sonic Syndicate",
+    "headliner": false
+   },
+   {
+    "band": "Rage",
+    "headliner": false
+   },
+   {
+    "band": "Type O Negative",
+    "headliner": false
+   },
+   {
+    "band": "Immortal",
+    "headliner": true
+   },
+   {
+    "band": "In Flames",
+    "headliner": true
+   },
+   {
+    "band": "Subway to Sally",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2007-08-15",
+  "venue": "Frequency Festival",
+  "city": "Salzburg",
+  "acts": [
+   {
+    "band": "Eagles of Death Metal",
+    "headliner": false
+   },
+   {
+    "band": "Dandy Warhols",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2007-08-16",
+  "venue": "Frequency Festival",
+  "city": "Salzburg",
+  "acts": [
+   {
+    "band": "Nine Inch Nails",
+    "headliner": true
+   },
+   {
+    "band": "Die Ärzte",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2007-08-17",
+  "venue": "Frequency Festival",
+  "city": "Salzburg",
+  "acts": [
+   {
+    "band": "Billy Talent",
+    "headliner": false
+   },
+   {
+    "band": "Kaiser Chiefs",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2007-12-06",
+  "venue": "Flex",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Crashdiet",
+    "headliner": false
+   },
+   {
+    "band": "Hardcore Superstar",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2008-04-12",
+  "venue": "Planet Music",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Ensiferum",
+    "headliner": true
+   },
+   {
+    "band": "Korpiklaani",
+    "headliner": false
+   },
+   {
+    "band": "Moonsorrow",
+    "headliner": false
+   },
+   {
+    "band": "Eluveitie",
+    "headliner": false
+   },
+   {
+    "band": "Tyr",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2008-06-13",
+  "venue": "Nova Rock",
+  "city": "Nickelsdorf",
+  "acts": [
+   {
+    "band": "Volbeat",
+    "headliner": false
+   },
+   {
+    "band": "Rose Tattoo",
+    "headliner": false
+   },
+   {
+    "band": "Airbourne",
+    "headliner": false
+   },
+   {
+    "band": "Alkbottle",
+    "headliner": false
+   },
+   {
+    "band": "Sex Pistols",
+    "headliner": true
+   },
+   {
+    "band": "Die Ärzte",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2008-06-14",
+  "venue": "Nova Rock",
+  "city": "Nickelsdorf",
+  "acts": [
+   {
+    "band": "Subway to Sally",
+    "headliner": false
+   },
+   {
+    "band": "Bad Religion",
+    "headliner": false
+   },
+   {
+    "band": "In Flames",
+    "headliner": true
+   },
+   {
+    "band": "Motörhead",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2008-06-15",
+  "venue": "Nova Rock",
+  "city": "Nickelsdorf",
+  "acts": [
+   {
+    "band": "Disturbed",
+    "headliner": false
+   },
+   {
+    "band": "Judas Priest",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2008-07-25",
+  "venue": "Rain Rock",
+  "city": "Maria Neustift",
+  "acts": [
+   {
+    "band": "Stoned Ponys",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2008-07-30",
+  "venue": "Wacken",
+  "city": "Wacken",
+  "acts": [
+   {
+    "band": "Mambo Kurt",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2008-07-31",
+  "venue": "Wacken",
+  "city": "Wacken",
+  "acts": [
+   {
+    "band": "Mustasch",
+    "headliner": false
+   },
+   {
+    "band": "Airbourne",
+    "headliner": false
+   },
+   {
+    "band": "Nashville Pussy",
+    "headliner": false
+   },
+   {
+    "band": "Iron Maiden",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2008-08-01",
+  "venue": "Wacken",
+  "city": "Wacken",
+  "acts": [
+   {
+    "band": "Ensiferum",
+    "headliner": false
+   },
+   {
+    "band": "Children of Bodom",
+    "headliner": true
+   },
+   {
+    "band": "Avantasia",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2008-08-02",
+  "venue": "Wacken",
+  "city": "Wacken",
+  "acts": [
+   {
+    "band": "The Bones",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2008-08-14",
+  "venue": "Frequency Festival",
+  "city": "Salzburg",
+  "acts": [
+   {
+    "band": "Flogging Molly",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2008-08-16",
+  "venue": "Frequency Festival",
+  "city": "Salzburg",
+  "acts": [
+   {
+    "band": "Dropkick Murphys",
+    "headliner": false
+   },
+   {
+    "band": "Danko Jones",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2008-08-28",
+  "venue": "Two Days A Week Festival",
+  "city": "Wiesen",
+  "acts": [
+   {
+    "band": "Backyard Babies",
+    "headliner": false
+   },
+   {
+    "band": "Marky Ramone",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2008-08-29",
+  "venue": "Two Days A Week Festival",
+  "city": "Wiesen",
+  "acts": [
+   {
+    "band": "Apocalyptica",
+    "headliner": true
+   },
+   {
+    "band": "Serj Tankian",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2008-10-16",
+  "venue": "Posthof",
+  "city": "Linz",
+  "acts": [
+   {
+    "band": "Volbeat",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2008-11-22",
+  "venue": "Rockhouse",
+  "city": "Salzburg",
   "acts": [
    {
     "band": "Backyard Babies",
@@ -33,6 +768,462 @@
   ]
  },
  {
+  "date": "2009-05-24",
+  "venue": "Ernst-Happel-Stadion",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "AC/DC",
+    "headliner": true
+   },
+   {
+    "band": "The Answer",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2009-06-11",
+  "venue": "Arena Wien",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Social Distortion",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2009-06-19",
+  "venue": "Nova Rock",
+  "city": "Nickelsdorf",
+  "acts": [
+   {
+    "band": "Sonic Syndicate",
+    "headliner": false
+   },
+   {
+    "band": "Caliban",
+    "headliner": false
+   },
+   {
+    "band": "Black Stone Cherry",
+    "headliner": false
+   },
+   {
+    "band": "Disturbed",
+    "headliner": false
+   },
+   {
+    "band": "Mastodon",
+    "headliner": false
+   },
+   {
+    "band": "Slipknot",
+    "headliner": true
+   },
+   {
+    "band": "Metallica",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2009-06-20",
+  "venue": "Nova Rock",
+  "city": "Nickelsdorf",
+  "acts": [
+   {
+    "band": "Monster Magnet",
+    "headliner": false
+   },
+   {
+    "band": "Killswitch Engage",
+    "headliner": false
+   },
+   {
+    "band": "In Extremo",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2009-06-21",
+  "venue": "Nova Rock",
+  "city": "Nickelsdorf",
+  "acts": [
+   {
+    "band": "Duff McKagan's Loaded",
+    "headliner": false
+   },
+   {
+    "band": "Trivium",
+    "headliner": false
+   },
+   {
+    "band": "Dimmu Borgir",
+    "headliner": false
+   },
+   {
+    "band": "Machine Head",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2009-07-14",
+  "venue": "Arena Wien",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Dropkick Murphys",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2009-08-07",
+  "venue": "Szene Open Air",
+  "city": "Lustenau",
+  "acts": [
+   {
+    "band": "Danko Jones",
+    "headliner": true
+   },
+   {
+    "band": "The Sorrow",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2009-08-08",
+  "venue": "Szene Open Air",
+  "city": "Lustenau",
+  "acts": [
+   {
+    "band": "Guano Apes",
+    "headliner": true
+   },
+   {
+    "band": "Hardcore Superstar",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2009-08-31",
+  "venue": "Two Days A Week Festival",
+  "city": "Wiesen",
+  "acts": [
+   {
+    "band": "Social Distortion",
+    "headliner": true
+   },
+   {
+    "band": "Angels & Airwaves",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2009-09-04",
+  "venue": "Two Days A Week Festival",
+  "city": "Wiesen",
+  "acts": [
+   {
+    "band": "Cavalera Conspiracy",
+    "headliner": false
+   },
+   {
+    "band": "Offspring",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2009-09-05",
+  "venue": "Two Days A Week Festival",
+  "city": "Wiesen",
+  "acts": [
+   {
+    "band": "The Baseballs",
+    "headliner": false
+   },
+   {
+    "band": "Russkaja",
+    "headliner": false
+   },
+   {
+    "band": "Gun",
+    "headliner": false
+   },
+   {
+    "band": "DragonForce",
+    "headliner": false
+   },
+   {
+    "band": "The Sorrow",
+    "headliner": false
+   },
+   {
+    "band": "Die Toten Hosen",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2009-10-29",
+  "venue": "Rockhouse",
+  "city": "Salzburg",
+  "acts": [
+   {
+    "band": "Hardcore Superstar",
+    "headliner": true
+   },
+   {
+    "band": "Avatar",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2009-10-29",
+  "venue": "Posthof",
+  "city": "Linz",
+  "acts": [
+   {
+    "band": "The Sorrow",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2009-10-30",
+  "venue": "Ottakringer Brauerei",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Avatar",
+    "headliner": false
+   },
+   {
+    "band": "Hardcore Superstar",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2009-11-21",
+  "venue": "Wiener Stadthalle",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Rammstein",
+    "headliner": true
+   },
+   {
+    "band": "Combichrist",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2010-02-13",
+  "venue": "Backstage Halle",
+  "city": "Munich",
+  "acts": [
+   {
+    "band": "Backyard Babies",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2010-03-04",
+  "venue": "Posthof",
+  "city": "Linz",
+  "acts": [
+   {
+    "band": "Taking Dawn",
+    "headliner": false
+   },
+   {
+    "band": "Airbourne",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2010-05-20",
+  "venue": "Wiener Stadthalle",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "KISS",
+    "headliner": true
+   },
+   {
+    "band": "Taking Dawn",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2010-05-22",
+  "venue": "Flugplatz",
+  "city": "Wels",
+  "acts": [
+   {
+    "band": "AC/DC",
+    "headliner": true
+   },
+   {
+    "band": "Volbeat",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2010-06-11",
+  "venue": "Nova Rock",
+  "city": "Nickelsdorf",
+  "acts": [
+   {
+    "band": "Rammstein",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2010-06-12",
+  "venue": "Nova Rock",
+  "city": "Nickelsdorf",
+  "acts": [
+   {
+    "band": "Heaven Shall Burn",
+    "headliner": false
+   },
+   {
+    "band": "Amon Amarth",
+    "headliner": false
+   },
+   {
+    "band": "Danko Jones",
+    "headliner": false
+   },
+   {
+    "band": "The Sorrow",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2010-06-13",
+  "venue": "Nova Rock",
+  "city": "Nickelsdorf",
+  "acts": [
+   {
+    "band": "Alkbottle",
+    "headliner": false
+   },
+   {
+    "band": "Bela B",
+    "headliner": false
+   },
+   {
+    "band": "BossHoss",
+    "headliner": false
+   },
+   {
+    "band": "As I Lay Dying",
+    "headliner": false
+   },
+   {
+    "band": "Killswitch Engage",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2010-09-18",
+  "venue": "Wiener Stadthalle",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Guns N' Roses",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2010-10-21",
+  "venue": "Arena Wien",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Danko Jones",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2010-11-05",
+  "venue": "Gasometer",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Volbeat",
+    "headliner": true
+   },
+   {
+    "band": "Entombed",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2010-11-06",
+  "venue": "Gasometer",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "As I Lay Dying",
+    "headliner": true
+   },
+   {
+    "band": "Heaven Shall Burn",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2011-01-15",
+  "venue": "Posthof",
+  "city": "Linz",
+  "acts": [
+   {
+    "band": "The Sorrow",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2011-02-06",
+  "venue": "Arena Wien",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Thin Lizzy",
+    "headliner": true
+   },
+   {
+    "band": "Supersuckers",
+    "headliner": false
+   }
+  ]
+ },
+ {
   "date": "2011-04-11",
   "venue": "Backstage Halle",
   "city": "Munich",
@@ -43,6 +1234,125 @@
    },
    {
     "band": "Hardcore Superstar",
+    "headliner": true
+   },
+   {
+    "band": "Crashdiet",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2011-04-17",
+  "venue": "Escape Metalcorner",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Enforcer",
+    "headliner": true
+   },
+   {
+    "band": "Bullet",
+    "headliner": true
+   },
+   {
+    "band": "Skullfist",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2011-06-11",
+  "venue": "Nova Rock",
+  "city": "Nickelsdorf",
+  "acts": [
+   {
+    "band": "Hammerfall",
+    "headliner": false
+   },
+   {
+    "band": "In Extremo",
+    "headliner": false
+   },
+   {
+    "band": "The Darkness",
+    "headliner": false
+   },
+   {
+    "band": "Sisters of Mercy",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2011-06-12",
+  "venue": "Nova Rock",
+  "city": "Nickelsdorf",
+  "acts": [
+   {
+    "band": "Jennifer Rostock",
+    "headliner": false
+   },
+   {
+    "band": "Black Stone Cherry",
+    "headliner": false
+   },
+   {
+    "band": "Times of Grace",
+    "headliner": false
+   },
+   {
+    "band": "Duff McKagan's Loaded",
+    "headliner": false
+   },
+   {
+    "band": "Danzig",
+    "headliner": false
+   },
+   {
+    "band": "Korn",
+    "headliner": false
+   },
+   {
+    "band": "Volbeat",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2011-06-13",
+  "venue": "Nova Rock",
+  "city": "Nickelsdorf",
+  "acts": [
+   {
+    "band": "In Flames",
+    "headliner": false
+   },
+   {
+    "band": "Motörhead",
+    "headliner": false
+   },
+   {
+    "band": "Iron Maiden",
+    "headliner": true
+   },
+   {
+    "band": "Social Distortion",
+    "headliner": true
+   },
+   {
+    "band": "System of a Down",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2011-06-26",
+  "venue": "Donauinselfest",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Danko Jones",
     "headliner": true
    }
   ]
@@ -58,6 +1368,21 @@
    },
    {
     "band": "The Treatment",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2011-11-23",
+  "venue": "Wiener Stadthalle",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Rammstein",
+    "headliner": true
+   },
+   {
+    "band": "Deathstars",
     "headliner": false
    }
   ]
@@ -89,6 +1414,143 @@
   ]
  },
  {
+  "date": "2012-03-14",
+  "venue": "Szene Wien",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Deathstars",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2012-03-21",
+  "venue": "Tonhalle",
+  "city": "Munich",
+  "acts": [
+   {
+    "band": "Steel Panther",
+    "headliner": true
+   },
+   {
+    "band": "Treatment",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2012-06-08",
+  "venue": "Nova Rock",
+  "city": "Nickelsdorf",
+  "acts": [
+   {
+    "band": "Shinedown",
+    "headliner": false
+   },
+   {
+    "band": "Devildriver",
+    "headliner": false
+   },
+   {
+    "band": "August Burns Red",
+    "headliner": false
+   },
+   {
+    "band": "Steel Panther",
+    "headliner": false
+   },
+   {
+    "band": "Killswitch Engage",
+    "headliner": false
+   },
+   {
+    "band": "Lamb of God",
+    "headliner": false
+   },
+   {
+    "band": "Offspring",
+    "headliner": false
+   },
+   {
+    "band": "The Sorrow",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2012-06-09",
+  "venue": "Nova Rock",
+  "city": "Nickelsdorf",
+  "acts": [
+   {
+    "band": "Dimmu Borgir",
+    "headliner": false
+   },
+   {
+    "band": "Machine Head",
+    "headliner": true
+   },
+   {
+    "band": "Billy Talent",
+    "headliner": true
+   },
+   {
+    "band": "Die Toten Hosen",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2012-06-10",
+  "venue": "Nova Rock",
+  "city": "Nickelsdorf",
+  "acts": [
+   {
+    "band": "As I Lay Dying",
+    "headliner": false
+   },
+   {
+    "band": "Trivium",
+    "headliner": false
+   },
+   {
+    "band": "Turbonegro",
+    "headliner": false
+   },
+   {
+    "band": "Hardcore Superstar",
+    "headliner": true
+   },
+   {
+    "band": "Metallica",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2012-06-22",
+  "venue": "Donauinselfest",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Frank Turner",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2012-06-23",
+  "venue": "Donauinselfest",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Jennifer Rostock",
+    "headliner": true
+   }
+  ]
+ },
+ {
   "date": "2012-06-26",
   "venue": "Wiener Stadthalle",
   "city": "Vienna",
@@ -100,6 +1562,44 @@
    {
     "band": "Alkbottle",
     "headliner": false
+   },
+   {
+    "band": "Black Label Society",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2012-09-01",
+  "venue": "Two Days A Week Festival",
+  "city": "Wiesen",
+  "acts": [
+   {
+    "band": "In Flames",
+    "headliner": true
+   },
+   {
+    "band": "Heaven Shall Burn",
+    "headliner": false
+   },
+   {
+    "band": "Jennifer Rostock",
+    "headliner": false
+   },
+   {
+    "band": "Turisas",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2012-10-11",
+  "venue": "Szene Wien",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Royal Republic",
+    "headliner": true
    }
   ]
  },
@@ -145,6 +1645,10 @@
    {
     "band": "As I Lay Dying",
     "headliner": true
+   },
+   {
+    "band": "Caliban",
+    "headliner": false
    }
   ]
  },
@@ -212,6 +1716,88 @@
   ]
  },
  {
+  "date": "2013-05-29",
+  "venue": "röda",
+  "city": "Steyr",
+  "acts": [
+   {
+    "band": "Reverend Backflash",
+    "headliner": true
+   },
+   {
+    "band": "Stoned Ponys",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2013-06-21",
+  "venue": "Donauinselfest",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Rea Garvey",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2013-08-30",
+  "venue": "Two Days A Week Festival",
+  "city": "Wiesen",
+  "acts": [
+   {
+    "band": "Marky Ramone",
+    "headliner": false
+   },
+   {
+    "band": "Die Ärzte",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2013-08-31",
+  "venue": "Two Days A Week Festival",
+  "city": "Wiesen",
+  "acts": [
+   {
+    "band": "The Darkness",
+    "headliner": false
+   },
+   {
+    "band": "Heaven Shall Burn",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2013-10-17",
+  "venue": "Chelsea",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Wednesday 13",
+    "headliner": true
+   },
+   {
+    "band": "Sister",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2013-10-30",
+  "venue": "Chelsea",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Quireboys",
+    "headliner": true
+   }
+  ]
+ },
+ {
   "date": "2013-11-09",
   "venue": "Gasometer",
   "city": "Vienna",
@@ -219,6 +1805,10 @@
    {
     "band": "Airbourne",
     "headliner": true
+   },
+   {
+    "band": "Black Spiders",
+    "headliner": false
    }
   ]
  },
@@ -248,6 +1838,10 @@
    },
    {
     "band": "Five Finger Death Punch",
+    "headliner": false
+   },
+   {
+    "band": "Device",
     "headliner": false
    }
   ]
@@ -301,6 +1895,117 @@
   ]
  },
  {
+  "date": "2014-08-01",
+  "venue": "Seerock",
+  "city": "Schwarzlsee",
+  "acts": [
+   {
+    "band": "Scorpions",
+    "headliner": true
+   },
+   {
+    "band": "Status Quo",
+    "headliner": false
+   },
+   {
+    "band": "BossHoss",
+    "headliner": false
+   },
+   {
+    "band": "Airbourne",
+    "headliner": false
+   },
+   {
+    "band": "Sabaton",
+    "headliner": false
+   },
+   {
+    "band": "Uriah Heep",
+    "headliner": false
+   },
+   {
+    "band": "Twisted Sister",
+    "headliner": true
+   },
+   {
+    "band": "Blind Guardian",
+    "headliner": false
+   },
+   {
+    "band": "Saxon",
+    "headliner": false
+   },
+   {
+    "band": "Dimmu Borgir",
+    "headliner": false
+   },
+   {
+    "band": "In Extremo",
+    "headliner": false
+   },
+   {
+    "band": "Hellyeah",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2014-08-02",
+  "venue": "Seerock",
+  "city": "Schwarzlsee",
+  "acts": [
+   {
+    "band": "Slayer",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2014-09-30",
+  "venue": "Randal Club",
+  "city": "Bratislava",
+  "acts": [
+   {
+    "band": "Crucified Barbara",
+    "headliner": true
+   },
+   {
+    "band": "Supercharger",
+    "headliner": false
+   },
+   {
+    "band": "Junkstars",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2014-10-16",
+  "venue": "Viper Room",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Kissin Dynamite",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2014-10-27",
+  "venue": "Gasometer",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Wovenwar",
+    "headliner": false
+   },
+   {
+    "band": "In Flames",
+    "headliner": true
+   }
+  ]
+ },
+ {
   "date": "2014-11-19",
   "venue": "Wiener Stadthalle",
   "city": "Vienna",
@@ -323,6 +2028,21 @@
   ]
  },
  {
+  "date": "2015-02-05",
+  "venue": "Gasometer",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Sabaton",
+    "headliner": true
+   },
+   {
+    "band": "Battle Beast",
+    "headliner": false
+   }
+  ]
+ },
+ {
   "date": "2015-03-25",
   "venue": "Arena Wien",
   "city": "Vienna",
@@ -330,6 +2050,139 @@
    {
     "band": "Danko Jones",
     "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2015-03-29",
+  "venue": "Gasometer",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Steel Panther",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2015-05-23",
+  "venue": "O2 Arena",
+  "city": "Prague",
+  "acts": [
+   {
+    "band": "Def Leppard",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2015-06-12",
+  "venue": "Nova Rock",
+  "city": "Nickelsdorf",
+  "acts": [
+   {
+    "band": "Deathstars",
+    "headliner": false
+   },
+   {
+    "band": "Backyard Babies",
+    "headliner": false
+   },
+   {
+    "band": "Friska Viljor",
+    "headliner": false
+   },
+   {
+    "band": "Lamb of God",
+    "headliner": false
+   },
+   {
+    "band": "Mötley Crüe",
+    "headliner": true
+   },
+   {
+    "band": "Scooter",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2015-06-13",
+  "venue": "Nova Rock",
+  "city": "Nickelsdorf",
+  "acts": [
+   {
+    "band": "Frank Turner",
+    "headliner": false
+   },
+   {
+    "band": "Rea Garvey",
+    "headliner": false
+   },
+   {
+    "band": "In Extremo",
+    "headliner": false
+   },
+   {
+    "band": "In Flames",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2015-06-14",
+  "venue": "Nova Rock",
+  "city": "Nickelsdorf",
+  "acts": [
+   {
+    "band": "Powerwolf",
+    "headliner": false
+   },
+   {
+    "band": "Eluveitie",
+    "headliner": false
+   },
+   {
+    "band": "Jennifer Rostock",
+    "headliner": false
+   },
+   {
+    "band": "Motörhead",
+    "headliner": true
+   },
+   {
+    "band": "Slipknot",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2015-07-02",
+  "venue": "Burg Clam",
+  "city": "Klam",
+  "acts": [
+   {
+    "band": "Slash",
+    "headliner": true
+   },
+   {
+    "band": "Black Star Riders",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2015-10-08",
+  "venue": "Majestic Music Club",
+  "city": "Bratislava",
+  "acts": [
+   {
+    "band": "U.D.O.",
+    "headliner": true
+   },
+   {
+    "band": "Sister Sin",
+    "headliner": false
    }
   ]
  },
@@ -361,12 +2214,199 @@
   ]
  },
  {
+  "date": "2015-11-19",
+  "venue": "Gasometer",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Whitesnake",
+    "headliner": true
+   },
+   {
+    "band": "Dead Daisies",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2016-01-27",
+  "venue": "Arena Wien",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "The Darkness",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2016-03-16",
+  "venue": "Szene Wien",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Reckless Love",
+    "headliner": true
+   },
+   {
+    "band": "Santa Cruz",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2016-04-01",
+  "venue": "röda",
+  "city": "Steyr",
+  "acts": [
+   {
+    "band": "Turbobier",
+    "headliner": true
+   },
+   {
+    "band": "Stoned Ponys",
+    "headliner": false
+   }
+  ]
+ },
+ {
   "date": "2016-04-23",
   "venue": "Wiener Stadthalle",
   "city": "Vienna",
   "acts": [
    {
     "band": "BossHoss",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2016-06-03",
+  "venue": "Rock in Vienna",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Eisbrecher",
+    "headliner": false
+   },
+   {
+    "band": "Pain",
+    "headliner": false
+   },
+   {
+    "band": "Anthrax",
+    "headliner": false
+   },
+   {
+    "band": "Babymetal",
+    "headliner": false
+   },
+   {
+    "band": "Slayer",
+    "headliner": false
+   },
+   {
+    "band": "Apocalyptica",
+    "headliner": false
+   },
+   {
+    "band": "Rammstein",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2016-06-04",
+  "venue": "Rock in Vienna",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Anti-Flag",
+    "headliner": false
+   },
+   {
+    "band": "Graveyard",
+    "headliner": false
+   },
+   {
+    "band": "Royal Republic",
+    "headliner": false
+   },
+   {
+    "band": "Monster Truck",
+    "headliner": false
+   },
+   {
+    "band": "Mando Diao",
+    "headliner": false
+   },
+   {
+    "band": "Biffy Clyro",
+    "headliner": false
+   },
+   {
+    "band": "Iggy Pop",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2016-06-05",
+  "venue": "Rock in Vienna",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Tremonti",
+    "headliner": false
+   },
+   {
+    "band": "Shinedown",
+    "headliner": false
+   },
+   {
+    "band": "Zakk Wylde",
+    "headliner": false
+   },
+   {
+    "band": "Powerwolf",
+    "headliner": false
+   },
+   {
+    "band": "Gojira",
+    "headliner": false
+   },
+   {
+    "band": "Nightwish",
+    "headliner": false
+   },
+   {
+    "band": "Iron Maiden",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2016-11-01",
+  "venue": "TipsArena",
+  "city": "Linz",
+  "acts": [
+   {
+    "band": "Volbeat",
+    "headliner": true
+   },
+   {
+    "band": "Airbourne",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2016-12-19",
+  "venue": "Posthof",
+  "city": "Linz",
+  "acts": [
+   {
+    "band": "Against Me!",
     "headliner": true
    }
   ]
@@ -379,6 +2419,103 @@
    {
     "band": "Dropkick Murphys",
     "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2017-01-21",
+  "venue": "Gasometer",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Powerwolf",
+    "headliner": true
+   },
+   {
+    "band": "Epica",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2017-02-11",
+  "venue": "Arena Wien",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Jennifer Rostock",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2017-03-30",
+  "venue": "Das Bach",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Bloodbound",
+    "headliner": true
+   },
+   {
+    "band": "Thobbe Englung",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2017-05-21",
+  "venue": "Wiener Stadthalle",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "KISS",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2017-05-26",
+  "venue": "Königsplatz",
+  "city": "Munich",
+  "acts": [
+   {
+    "band": "Aerosmith",
+    "headliner": true
+   },
+   {
+    "band": "Foreigner",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2017-07-10",
+  "venue": "Ernst-Happel-Stadion",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Guns N' Roses",
+    "headliner": true
+   },
+   {
+    "band": "Wolfmother",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2017-11-14",
+  "venue": "Flex",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Hardcore Superstar",
+    "headliner": true
+   },
+   {
+    "band": "Fozzy",
+    "headliner": false
    }
   ]
  },
@@ -398,6 +2535,17 @@
   ]
  },
  {
+  "date": "2018-02-01",
+  "venue": "Viper Room",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Grailknights",
+    "headliner": true
+   }
+  ]
+ },
+ {
   "date": "2018-02-20",
   "venue": "Gasometer",
   "city": "Vienna",
@@ -409,12 +2557,34 @@
   ]
  },
  {
+  "date": "2018-03-30",
+  "venue": "Posthof",
+  "city": "Linz",
+  "acts": [
+   {
+    "band": "Jennifer Rostock",
+    "headliner": true
+   }
+  ]
+ },
+ {
   "date": "2018-04-19",
   "venue": "Gasometer",
   "city": "Vienna",
   "acts": [
    {
     "band": "Machine Head",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2018-06-04",
+  "venue": "Wiener Stadthalle",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Katy Perry",
     "headliner": true
    }
   ]
@@ -435,6 +2605,17 @@
   ]
  },
  {
+  "date": "2018-10-20",
+  "venue": "Festsaal Kreuzberg",
+  "city": "Berlin",
+  "acts": [
+   {
+    "band": "Schmutzki",
+    "headliner": true
+   }
+  ]
+ },
+ {
   "date": "2018-11-06",
   "venue": "Arena Wien",
   "city": "Vienna",
@@ -442,6 +2623,14 @@
    {
     "band": "Powerwolf",
     "headliner": true
+   },
+   {
+    "band": "Kissin Dynamite",
+    "headliner": false
+   },
+   {
+    "band": "Amaranthe",
+    "headliner": false
    }
   ]
  },
@@ -457,6 +2646,51 @@
   ]
  },
  {
+  "date": "2018-11-24",
+  "venue": "Flex",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Danko Jones",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2018-11-25",
+  "venue": "Szene Wien",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Heat",
+    "headliner": true
+   },
+   {
+    "band": "One Desire",
+    "headliner": false
+   },
+   {
+    "band": "Shiraz Lane",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2018-12-07",
+  "venue": "Ann and Pat",
+  "city": "Linz",
+  "acts": [
+   {
+    "band": "Red Machete",
+    "headliner": false
+   },
+   {
+    "band": "Reverend Backflash",
+    "headliner": true
+   }
+  ]
+ },
+ {
   "date": "2019-02-10",
   "venue": "Gasometer",
   "city": "Vienna",
@@ -464,6 +2698,10 @@
    {
     "band": "Slash",
     "headliner": true
+   },
+   {
+    "band": "Phil Campbell and The Bastard Sons",
+    "headliner": false
    }
   ]
  },
@@ -475,6 +2713,14 @@
    {
     "band": "The Bones",
     "headliner": true
+   },
+   {
+    "band": "Backyard Babies",
+    "headliner": true
+   },
+   {
+    "band": "Audrey Horne",
+    "headliner": false
    }
   ]
  },
@@ -504,6 +2750,25 @@
    },
    {
     "band": "Thundermother",
+    "headliner": false
+   },
+   {
+    "band": "Audrey Horne",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2019-05-24",
+  "venue": "röda",
+  "city": "Steyr",
+  "acts": [
+   {
+    "band": "Reverend Backflash",
+    "headliner": true
+   },
+   {
+    "band": "Stoned Ponys",
     "headliner": false
    }
   ]
@@ -546,6 +2811,10 @@
    {
     "band": "Skid Row",
     "headliner": false
+   },
+   {
+    "band": "Bon Jovi",
+    "headliner": true
    }
   ]
  },
@@ -557,6 +2826,40 @@
    {
     "band": "Scorpions",
     "headliner": true
+   },
+   {
+    "band": "Europe",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2019-08-22",
+  "venue": "Ernst-Happel-Stadion",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Rammstein",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2019-10-13",
+  "venue": "Bahnhof Pauli",
+  "city": "Hamburg",
+  "acts": [
+   {
+    "band": "Crashdiet",
+    "headliner": true
+   },
+   {
+    "band": "Cruel Intentions",
+    "headliner": false
+   },
+   {
+    "band": "Highride",
+    "headliner": false
    }
   ]
  },
@@ -591,6 +2894,62 @@
   ]
  },
  {
+  "date": "2019-12-05",
+  "venue": "Posthof",
+  "city": "Linz",
+  "acts": [
+   {
+    "band": "Powerwolf",
+    "headliner": true
+   },
+   {
+    "band": "Gloryhammer",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2020-01-21",
+  "venue": "Gasometer",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Sabaton",
+    "headliner": true
+   },
+   {
+    "band": "Apocalyptica",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2020-02-06",
+  "venue": "Szene Wien",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Gloryhammer",
+    "headliner": true
+   },
+   {
+    "band": "Nekrogoblikon",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2020-02-08",
+  "venue": "Gasometer",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Lindemann",
+    "headliner": true
+   }
+  ]
+ },
+ {
   "date": "2020-02-22",
   "venue": "Gasometer",
   "city": "Vienna",
@@ -602,6 +2961,29 @@
    {
     "band": "Serious Black",
     "headliner": false
+   },
+   {
+    "band": "Hammerfall",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2021-08-14",
+  "venue": "Arena Wien",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Vulvarine",
+    "headliner": false
+   },
+   {
+    "band": "Insanity Alert",
+    "headliner": false
+   },
+   {
+    "band": "Turbobier",
+    "headliner": true
    }
   ]
  },
@@ -634,6 +3016,10 @@
   "acts": [
    {
     "band": "Hammerfall",
+    "headliner": true
+   },
+   {
+    "band": "Helloween",
     "headliner": true
    }
   ]
@@ -683,6 +3069,21 @@
   "acts": [
    {
     "band": "Guns N' Roses",
+    "headliner": true
+   },
+   {
+    "band": "Gary Clark Jr",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2022-07-15",
+  "venue": "Ernst-Happel-Stadion",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Rolling Stones",
     "headliner": true
    }
   ]
@@ -782,6 +3183,55 @@
   ]
  },
  {
+  "date": "2022-10-30",
+  "venue": "Messezentrum",
+  "city": "Salzburg",
+  "acts": [
+   {
+    "band": "Doro",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2022-11-17",
+  "venue": "Gasometer",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Powerwolf",
+    "headliner": true
+   },
+   {
+    "band": "DragonForce",
+    "headliner": false
+   },
+   {
+    "band": "Warkings",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2022-12-02",
+  "venue": "Sporthalle",
+  "city": "Hamburg",
+  "acts": [
+   {
+    "band": "DragonForce",
+    "headliner": false
+   },
+   {
+    "band": "Powerwolf",
+    "headliner": true
+   },
+   {
+    "band": "Warkings",
+    "headliner": false
+   }
+  ]
+ },
+ {
   "date": "2022-12-09",
   "venue": "Gasometer",
   "city": "Vienna",
@@ -793,6 +3243,32 @@
    {
     "band": "Blues Pills",
     "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2023-02-13",
+  "venue": "Arena Wien",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Firewind",
+    "headliner": false
+   },
+   {
+    "band": "Beast in Black",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2023-03-19",
+  "venue": "Gasometer",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Finch",
+    "headliner": true
    }
   ]
  },
@@ -812,6 +3288,32 @@
   ]
  },
  {
+  "date": "2023-04-15",
+  "venue": "röda",
+  "city": "Steyr",
+  "acts": [
+   {
+    "band": "Stoned Ponys",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2023-05-04",
+  "venue": "SimmCity",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Dymytry",
+    "headliner": false
+   },
+   {
+    "band": "Hämatom",
+    "headliner": true
+   }
+  ]
+ },
+ {
   "date": "2023-05-07",
   "venue": "Wiener Stadthalle",
   "city": "Vienna",
@@ -819,6 +3321,1507 @@
    {
     "band": "Sabaton",
     "headliner": true
+   },
+   {
+    "band": "Babymetal",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2023-07-01",
+  "venue": "Ernst-Happel-Stadion",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Pink",
+    "headliner": true
+   },
+   {
+    "band": "Alice Merton",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2023-07-13",
+  "venue": "Area53",
+  "city": "Leoben",
+  "acts": [
+   {
+    "band": "Feuerschwanz",
+    "headliner": true
+   },
+   {
+    "band": "Soulfly",
+    "headliner": false
+   },
+   {
+    "band": "Wind Rose",
+    "headliner": false
+   },
+   {
+    "band": "Dust Bolt",
+    "headliner": false
+   },
+   {
+    "band": "Dominum",
+    "headliner": false
+   },
+   {
+    "band": "Parasite Inc",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2023-07-14",
+  "venue": "Area53",
+  "city": "Leoben",
+  "acts": [
+   {
+    "band": "Kreator",
+    "headliner": true
+   },
+   {
+    "band": "Beast in Black",
+    "headliner": false
+   },
+   {
+    "band": "Marduk",
+    "headliner": false
+   },
+   {
+    "band": "Angus McSix",
+    "headliner": false
+   },
+   {
+    "band": "Nanowar of Steel",
+    "headliner": false
+   },
+   {
+    "band": "Dymytry",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2023-07-15",
+  "venue": "Area53",
+  "city": "Leoben",
+  "acts": [
+   {
+    "band": "Hammerfall",
+    "headliner": true
+   },
+   {
+    "band": "Dark Funeral",
+    "headliner": false
+   },
+   {
+    "band": "Visions of Atlantis",
+    "headliner": false
+   },
+   {
+    "band": "Legion of the Damned",
+    "headliner": false
+   },
+   {
+    "band": "Crypta",
+    "headliner": false
+   },
+   {
+    "band": "Autumn Bride",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2023-08-03",
+  "venue": "Posthof",
+  "city": "Linz",
+  "acts": [
+   {
+    "band": "Heaven Shall Burn",
+    "headliner": true
+   },
+   {
+    "band": "Bleed From Within",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2023-08-10",
+  "venue": "Posthof",
+  "city": "Linz",
+  "acts": [
+   {
+    "band": "Red Machete",
+    "headliner": false
+   },
+   {
+    "band": "Airbourne",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2023-09-05",
+  "venue": "Szene Wien",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Eclipse",
+    "headliner": true
+   },
+   {
+    "band": "Heat",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2023-10-17",
+  "venue": "Gasometer",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Blind Guardian",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2023-11-06",
+  "venue": "Gasometer",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Carpenter Brut",
+    "headliner": true
+   },
+   {
+    "band": "Pertubator",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2023-11-10",
+  "venue": "Posthof",
+  "city": "Linz",
+  "acts": [
+   {
+    "band": "Rauhbein",
+    "headliner": false
+   },
+   {
+    "band": "dArtagnan",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2023-11-19",
+  "venue": "Gasometer",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Alestorm",
+    "headliner": false
+   },
+   {
+    "band": "Saltatio Mortis",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2023-11-25",
+  "venue": "Szene Wien",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Kupfergold",
+    "headliner": false
+   },
+   {
+    "band": "Mr. Hurley & Die Pulveraffen",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2023-11-26",
+  "venue": "Szene Wien",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Liv Sin",
+    "headliner": false
+   },
+   {
+    "band": "Priest",
+    "headliner": false
+   },
+   {
+    "band": "Deathstars",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2024-02-14",
+  "venue": "Szene Wien",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Battle Beast",
+    "headliner": true
+   },
+   {
+    "band": "Saint Deamon",
+    "headliner": false
+   },
+   {
+    "band": "Induction",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2024-03-01",
+  "venue": "Wiener Stadthalle",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Electric Callboy",
+    "headliner": true
+   },
+   {
+    "band": "Nothing More",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2024-03-07",
+  "venue": "Gasometer",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Infected Rain",
+    "headliner": false
+   },
+   {
+    "band": "DragonForce",
+    "headliner": true
+   },
+   {
+    "band": "Amaranthe",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2024-03-08",
+  "venue": "Posthof",
+  "city": "Linz",
+  "acts": [
+   {
+    "band": "Versengold",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2024-04-01",
+  "venue": "Wiener Stadthalle",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Uriah Heep",
+    "headliner": false
+   },
+   {
+    "band": "Saxon",
+    "headliner": false
+   },
+   {
+    "band": "Judas Priest",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2024-04-11",
+  "venue": "Szene Wien",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Deine Cousine",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2024-04-13",
+  "venue": "röda",
+  "city": "Steyr",
+  "acts": [
+   {
+    "band": "Stoned Ponys",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2024-04-27",
+  "venue": "röda",
+  "city": "Steyr",
+  "acts": [
+   {
+    "band": "Vulvarine",
+    "headliner": true
+   },
+   {
+    "band": "Kitty Cat & The Ugly Heads",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2024-06-13",
+  "venue": "Nova Rock",
+  "city": "Nickelsdorf",
+  "acts": [
+   {
+    "band": "AsInHell",
+    "headliner": false
+   },
+   {
+    "band": "Dogstar",
+    "headliner": false
+   },
+   {
+    "band": "Kerry King",
+    "headliner": false
+   },
+   {
+    "band": "Billy Talent",
+    "headliner": true
+   },
+   {
+    "band": "Green Day",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2024-06-14",
+  "venue": "Nova Rock",
+  "city": "Nickelsdorf",
+  "acts": [
+   {
+    "band": "Feuerschwanz",
+    "headliner": false
+   },
+   {
+    "band": "Igorrr",
+    "headliner": false
+   },
+   {
+    "band": "Yaenniver",
+    "headliner": false
+   },
+   {
+    "band": "Machine Head",
+    "headliner": true
+   },
+   {
+    "band": "Parkway Drive",
+    "headliner": true
+   },
+   {
+    "band": "Avenged Sevenfold",
+    "headliner": true
+   },
+   {
+    "band": "Otto & die Friesenjungs",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2024-06-15",
+  "venue": "Nova Rock",
+  "city": "Nickelsdorf",
+  "acts": [
+   {
+    "band": "Against the Current",
+    "headliner": false
+   },
+   {
+    "band": "Saltatio Mortis",
+    "headliner": false
+   },
+   {
+    "band": "P.O.D.",
+    "headliner": false
+   },
+   {
+    "band": "Steel Panther",
+    "headliner": false
+   },
+   {
+    "band": "Body Count",
+    "headliner": false
+   },
+   {
+    "band": "Alice Cooper",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2024-06-16",
+  "venue": "Nova Rock",
+  "city": "Nickelsdorf",
+  "acts": [
+   {
+    "band": "Beast in Black",
+    "headliner": false
+   },
+   {
+    "band": "Solence",
+    "headliner": false
+   },
+   {
+    "band": "Hämatom",
+    "headliner": false
+   },
+   {
+    "band": "Dropkick Murphys",
+    "headliner": true
+   },
+   {
+    "band": "Swiss & Ferris",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2024-06-23",
+  "venue": "Ernst-Happel-Stadion",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "The Pretty Reckless",
+    "headliner": false
+   },
+   {
+    "band": "AC/DC",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2024-07-12",
+  "venue": "Area53",
+  "city": "Leoben",
+  "acts": [
+   {
+    "band": "Dystersol",
+    "headliner": false
+   },
+   {
+    "band": "Sonic Riot",
+    "headliner": false
+   },
+   {
+    "band": "Robse",
+    "headliner": false
+   },
+   {
+    "band": "Grailknights",
+    "headliner": false
+   },
+   {
+    "band": "Nachtblut",
+    "headliner": false
+   },
+   {
+    "band": "Decapitated",
+    "headliner": false
+   },
+   {
+    "band": "KK's Priest",
+    "headliner": false
+   },
+   {
+    "band": "Avantasia",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2024-07-20",
+  "venue": "Arena Wien",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Finch",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2024-08-30",
+  "venue": "RAW Festival",
+  "city": "Attnang-Puchheim",
+  "acts": [
+   {
+    "band": "V8 Wankers",
+    "headliner": false
+   },
+   {
+    "band": "The Bones",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2024-09-07",
+  "venue": "Marktfest",
+  "city": "Wolfern",
+  "acts": [
+   {
+    "band": "Stoned Ponys",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2024-09-19",
+  "venue": "Szene Wien",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Seraina Telli",
+    "headliner": false
+   },
+   {
+    "band": "Illumishade",
+    "headliner": false
+   },
+   {
+    "band": "Visions of Atlantis",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2024-10-04",
+  "venue": "Barclays Arena",
+  "city": "Hamburg",
+  "acts": [
+   {
+    "band": "Wind Rose",
+    "headliner": false
+   },
+   {
+    "band": "Hammerfall",
+    "headliner": false
+   },
+   {
+    "band": "Powerwolf",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2024-10-19",
+  "venue": "Tabakfabrik",
+  "city": "Linz",
+  "acts": [
+   {
+    "band": "Doro",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2024-10-22",
+  "venue": "Gasometer",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Soilwork",
+    "headliner": false
+   },
+   {
+    "band": "Arch Enemy",
+    "headliner": true
+   },
+   {
+    "band": "In Flames",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2024-10-23",
+  "venue": "Gasometer",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Wind Rose",
+    "headliner": false
+   },
+   {
+    "band": "Hammerfall",
+    "headliner": false
+   },
+   {
+    "band": "Powerwolf",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2024-10-31",
+  "venue": "Posthof",
+  "city": "Linz",
+  "acts": [
+   {
+    "band": "Storm Seeker",
+    "headliner": false
+   },
+   {
+    "band": "dArtagnan",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2024-11-28",
+  "venue": "Posthof",
+  "city": "Linz",
+  "acts": [
+   {
+    "band": "ZSK",
+    "headliner": false
+   },
+   {
+    "band": "Swiss & Die Andern",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2024-12-01",
+  "venue": "Zenith",
+  "city": "Munich",
+  "acts": [
+   {
+    "band": "Testament",
+    "headliner": false
+   },
+   {
+    "band": "Anthrax",
+    "headliner": true
+   },
+   {
+    "band": "Kreator",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2024-12-06",
+  "venue": "Gasometer",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Dominum",
+    "headliner": false
+   },
+   {
+    "band": "Ordan Ogan",
+    "headliner": false
+   },
+   {
+    "band": "Feuerschwanz",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2024-12-07",
+  "venue": "Gasometer",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Rauhbein",
+    "headliner": false
+   },
+   {
+    "band": "Korpiklaani",
+    "headliner": false
+   },
+   {
+    "band": "In Extremo",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2025-02-27",
+  "venue": "Szene Wien",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Sagenbringer",
+    "headliner": false
+   },
+   {
+    "band": "Nachtblut",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2025-03-27",
+  "venue": "SimmCity",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Manntra",
+    "headliner": false
+   },
+   {
+    "band": "dArtagnan",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2025-04-02",
+  "venue": "Gasometer",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Avantasia",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2025-04-04",
+  "venue": "Gasometer",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Rotting Christ",
+    "headliner": false
+   },
+   {
+    "band": "Satyricon",
+    "headliner": false
+   },
+   {
+    "band": "Behemoth",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2025-04-05",
+  "venue": "röda",
+  "city": "Steyr",
+  "acts": [
+   {
+    "band": "Stupe-iT",
+    "headliner": false
+   },
+   {
+    "band": "NACA7",
+    "headliner": false
+   },
+   {
+    "band": "Sergeant Steel",
+    "headliner": false
+   },
+   {
+    "band": "Mandatory",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2025-06-12",
+  "venue": "Nova Rock",
+  "city": "Nickelsdorf",
+  "acts": [
+   {
+    "band": "Apocalyptica",
+    "headliner": false
+   },
+   {
+    "band": "In Flames",
+    "headliner": false
+   },
+   {
+    "band": "Cradle of Filth",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2025-06-13",
+  "venue": "Nova Rock",
+  "city": "Nickelsdorf",
+  "acts": [
+   {
+    "band": "Deine Cousine",
+    "headliner": false
+   },
+   {
+    "band": "Amaranthe",
+    "headliner": false
+   },
+   {
+    "band": "Slipknot",
+    "headliner": true
+   },
+   {
+    "band": "Powerwolf",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2025-06-14",
+  "venue": "Nova Rock",
+  "city": "Nickelsdorf",
+  "acts": [
+   {
+    "band": "DragonForce",
+    "headliner": false
+   },
+   {
+    "band": "Alligatoah",
+    "headliner": false
+   },
+   {
+    "band": "Danko Jones",
+    "headliner": false
+   },
+   {
+    "band": "Heaven Shall Burn",
+    "headliner": false
+   },
+   {
+    "band": "Electric Callboy",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2025-06-27",
+  "venue": "Stadtfest",
+  "city": "Steyr",
+  "acts": [
+   {
+    "band": "Stoned Ponys",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2025-07-10",
+  "venue": "Area53",
+  "city": "Leoben",
+  "acts": [
+   {
+    "band": "South of Salem",
+    "headliner": false
+   },
+   {
+    "band": "Evil Invaders",
+    "headliner": false
+   },
+   {
+    "band": "Warkings",
+    "headliner": false
+   },
+   {
+    "band": "dArtagnan",
+    "headliner": false
+   },
+   {
+    "band": "W.A.S.P.",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2025-07-11",
+  "venue": "Area53",
+  "city": "Leoben",
+  "acts": [
+   {
+    "band": "Tailgunner",
+    "headliner": false
+   },
+   {
+    "band": "Varg",
+    "headliner": false
+   },
+   {
+    "band": "Phill Campbell and the Bastard Sons",
+    "headliner": false
+   },
+   {
+    "band": "Lordi",
+    "headliner": false
+   },
+   {
+    "band": "Gloryhammer",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2025-07-12",
+  "venue": "Area53",
+  "city": "Leoben",
+  "acts": [
+   {
+    "band": "Steve 'n' Seagulls",
+    "headliner": false
+   },
+   {
+    "band": "Unleash the Archers",
+    "headliner": false
+   },
+   {
+    "band": "Kanonenfieber",
+    "headliner": false
+   },
+   {
+    "band": "Korpiklaani",
+    "headliner": false
+   },
+   {
+    "band": "Battle Beast",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2025-07-17",
+  "venue": "Ernst-Happel-Stadion",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Avatar",
+    "headliner": false
+   },
+   {
+    "band": "Iron Maiden",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2025-07-22",
+  "venue": "Posthof",
+  "city": "Linz",
+  "acts": [
+   {
+    "band": "Black Inhale",
+    "headliner": false
+   },
+   {
+    "band": "Machine Head",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2025-07-26",
+  "venue": "Posthof",
+  "city": "Linz",
+  "acts": [
+   {
+    "band": "Dominum",
+    "headliner": false
+   },
+   {
+    "band": "In Extremo",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2025-08-07",
+  "venue": "Alter Schlachthof",
+  "city": "Wels",
+  "acts": [
+   {
+    "band": "Vulvarine",
+    "headliner": false
+   },
+   {
+    "band": "Turbonegro",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2025-09-21",
+  "venue": "Wiener Stadthalle",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Thy Art Is Murder",
+    "headliner": false
+   },
+   {
+    "band": "Parkway Drive",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2025-10-04",
+  "venue": "Wiener Stadthalle",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Mia Julia",
+    "headliner": false
+   },
+   {
+    "band": "Finch",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2025-10-10",
+  "venue": "Rockhouse",
+  "city": "Salzburg",
+  "acts": [
+   {
+    "band": "Formosa",
+    "headliner": false
+   },
+   {
+    "band": "Heat",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2025-11-01",
+  "venue": "Barclays Arena",
+  "city": "Hamburg",
+  "acts": [
+   {
+    "band": "Beast in Black",
+    "headliner": false
+   },
+   {
+    "band": "Helloween",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2025-11-06",
+  "venue": "Gasometer",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Bad Loverz",
+    "headliner": false
+   },
+   {
+    "band": "Saltatio Mortis",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2025-11-07",
+  "venue": "röda",
+  "city": "Steyr",
+  "acts": [
+   {
+    "band": "Autumn Bride",
+    "headliner": false
+   },
+   {
+    "band": "Dragony",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2025-11-15",
+  "venue": "SimmCity",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Vogelfrey",
+    "headliner": false
+   },
+   {
+    "band": "Mr. Hurley & Die Pulveraffen",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2025-11-21",
+  "venue": "Wiener Stadthalle",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Legendary Orchestra",
+    "headliner": false
+   },
+   {
+    "band": "Sabaton",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2025-11-22",
+  "venue": "Wiener Stadthalle",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Wargasm",
+    "headliner": false
+   },
+   {
+    "band": "Burry Tomorrow",
+    "headliner": false
+   },
+   {
+    "band": "Electric Callboy",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2025-11-29",
+  "venue": "Chelsea",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Punch Drunk Poets",
+    "headliner": false
+   },
+   {
+    "band": "Kupfergold",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2025-11-30",
+  "venue": "Arena Wien",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Majestica",
+    "headliner": false
+   },
+   {
+    "band": "Dominum",
+    "headliner": false
+   },
+   {
+    "band": "Battle Beast",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2025-12-06",
+  "venue": "Szene Wien",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Rauhbein",
+    "headliner": true
+   },
+   {
+    "band": "Liebe & Krawall",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2025-12-12",
+  "venue": "röda",
+  "city": "Steyr",
+  "acts": [
+   {
+    "band": "Stoned Ponys",
+    "headliner": false
+   },
+   {
+    "band": "Igel vs Shark",
+    "headliner": false
+   },
+   {
+    "band": "Vulvarine",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2025-12-18",
+  "venue": "röda",
+  "city": "Steyr",
+  "acts": [
+   {
+    "band": "Turbobier",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2026-01-09",
+  "venue": "Rockhouse",
+  "city": "Salzburg",
+  "acts": [
+   {
+    "band": "Hämatom",
+    "headliner": true
+   },
+   {
+    "band": "Dymytry",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2026-01-23",
+  "venue": "Arena Wien",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Seraina Telli",
+    "headliner": false
+   },
+   {
+    "band": "Setyøursails",
+    "headliner": false
+   },
+   {
+    "band": "Beyond the Black",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2026-03-06",
+  "venue": "SimmCity",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Induction",
+    "headliner": false
+   },
+   {
+    "band": "Visions of Atlantis",
+    "headliner": true
+   },
+   {
+    "band": "Warkings",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2026-03-07",
+  "venue": "Gasometer",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Kupfergold",
+    "headliner": false
+   },
+   {
+    "band": "Versengold",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2026-03-26",
+  "venue": "Gasometer",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Miracle of Sound",
+    "headliner": false
+   },
+   {
+    "band": "Feuerschwanz",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2026-04-09",
+  "venue": "Gasometer",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Exodus",
+    "headliner": false
+   },
+   {
+    "band": "Carcass",
+    "headliner": false
+   },
+   {
+    "band": "Kreator",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2026-04-19",
+  "venue": "Gasometer",
+  "city": "Vienna",
+  "acts": [
+   {
+    "band": "Machine Head",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2026-04-25",
+  "venue": "röda",
+  "city": "Steyr",
+  "acts": [
+   {
+    "band": "Stoned Ponys",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2026-06-11",
+  "venue": "Nova Rock",
+  "city": "Nickelsdorf",
+  "acts": [
+   {
+    "band": "Mittel Alta",
+    "headliner": true
+   },
+   {
+    "band": "dArtagnan",
+    "headliner": true
+   },
+   {
+    "band": "Feine Sahne Fischfilet",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2026-06-12",
+  "venue": "Nova Rock",
+  "city": "Nickelsdorf",
+  "acts": [
+   {
+    "band": "The Pretty Reckless",
+    "headliner": true
+   },
+   {
+    "band": "Social Distortion",
+    "headliner": true
+   },
+   {
+    "band": "The Offspring",
+    "headliner": true
+   },
+   {
+    "band": "Ice Nine Kills",
+    "headliner": true
+   },
+   {
+    "band": "Sepultura",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2026-06-13",
+  "venue": "Nova Rock",
+  "city": "Nickelsdorf",
+  "acts": [
+   {
+    "band": "Kupfergold",
+    "headliner": true
+   },
+   {
+    "band": "Alter Bridge",
+    "headliner": true
+   },
+   {
+    "band": "Iron Maiden",
+    "headliner": true
+   },
+   {
+    "band": "Sabaton",
+    "headliner": true
+   }
+  ]
+ },
+ {
+  "date": "2026-06-20",
+  "venue": "Burg Clam",
+  "city": "Klam",
+  "acts": [
+   {
+    "band": "Lenny Kravitz",
+    "headliner": true
+   },
+   {
+    "band": "De'Wayne",
+    "headliner": false
+   }
+  ]
+ },
+ {
+  "date": "2026-06-26",
+  "venue": "Burg Clam",
+  "city": "Klam",
+  "acts": [
+   {
+    "band": "Electric Callboy",
+    "headliner": true
+   },
+   {
+    "band": "H-Blockx",
+    "headliner": false
+   },
+   {
+    "band": "From Fall To Spring",
+    "headliner": false
    }
   ]
  }

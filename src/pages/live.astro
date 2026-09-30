@@ -9,8 +9,8 @@ const venues = new Set(concerts.map((n) => n.venue)).size;
 const since = concerts[0].date.slice(0, 4);
 
 ---
-<Base title="Live — Klaus Eckelt" description="Every concert Klaus Eckelt has been to since 2004, one dot per act.">
-  <SubHeader title="Live" intro="Every concert I have been to since 2004: one column per night, one dot per act on the bill." />
+<Base title="Live — Klaus Eckelt" description={`Every concert Klaus Eckelt has been to since ${since}, one dot per act.`}>
+  <SubHeader title="Live" intro={`Every concert I have been to since ${since}: one dot per act on the bill, stacked by date.`} />
 
   <section class="band wrap live">
     <div class="head">
@@ -21,7 +21,7 @@ const since = concerts[0].date.slice(0, 4);
     <div class="legend mono">
       <span><i class="dot"></i>headliner</span>
       <span><i class="ring"></i>support</span>
-      <span>Hover a column for the night</span>
+      <span>Hover a dot for the night</span>
     </div>
   </section>
 

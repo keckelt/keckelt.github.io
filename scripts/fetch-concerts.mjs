@@ -3,8 +3,10 @@
 // 1. In the sheet: File → Share → Publish to web → pick a tab → CSV. Copy the URL.
 // 2. Put one or more URLs (comma-separated) in the CONCERTS_CSV_URLS env var
 //    (locally in .env, on GitHub as a repository secret).
+//    Local CSV files work too: pass a path instead of a URL.
+// Only band, date, venue, city and act are kept; prices and notes never leave the sheet.
 // Without the variable, the committed concerts.json is kept as-is.
-import { writeFile } from 'node:fs/promises';
+import { readFile, writeFile } from 'node:fs/promises';
 
 const OUT = new URL('../src/data/concerts.json', import.meta.url);
 const urls = (process.env.CONCERTS_CSV_URLS ?? '').split(',').map((s) => s.trim()).filter(Boolean);
@@ -54,9 +56,15 @@ if (!urls.length) {
 
 const nights = new Map();
 for (const url of urls) {
-  const res = await fetch(url);
-  if (!res.ok) throw new Error(`[concerts] ${res.status} fetching ${url}`);
-  const [header, ...rows] = parseCSV(await res.text());
+  let text;
+  if (/^https?:\/\//.test(url)) {
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`[concerts] ${res.status} fetching ${url}`);
+    text = await res.text();
+  } else {
+    text = await readFile(url, 'utf8');
+  }
+  const [header, ...rows] = parseCSV(text);
   const idx = Object.fromEntries(Object.entries(COLUMNS).map(([key, names]) =>
     [key, header.findIndex((h) => names.includes(h.trim().toLowerCase()))]));
   if (idx.band < 0 || idx.date < 0 || idx.venue < 0) {
