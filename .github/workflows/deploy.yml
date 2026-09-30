@@ -1,37 +1,42 @@
-name: Node Build+Deploy
+name: Build and deploy
 
 on:
   push:
-    branches: 
+    branches:
       - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
 
 jobs:
-  deploy-to-github-pages:
+  deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - 
-        name: Checkout Code
-        uses: actions/checkout@v1
+      - name: Checkout code
+        uses: actions/checkout@v5
 
-      - 
-        name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+      - name: Set up Node.js
+        uses: actions/setup-node@v5
         with:
-          node-version: 17.x
+          node-version: 24
+          cache: npm
 
-      - 
-        name: npm install and build
+      - name: Install and build
         run: |
           npm ci
-          npm run deploy --if-present
-        env:
-          CI: true
+          npm run build
 
-      - 
-        name: Deploy to GitHub Pages
-        uses: crazy-max/ghaction-github-pages@v1
+      - name: Deploy to the gh-pages branch
+        uses: crazy-max/ghaction-github-pages@v4
         with:
+          target_branch: gh-pages
           build_dir: dist
+          fqdn: eckelt.info
+          jekyll: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

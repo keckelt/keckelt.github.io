@@ -1,14 +1,17 @@
-// vite.config.js
-const { resolve } = require('path')
-const { defineConfig } = require('vite')
+import { resolve } from 'node:path';
+import { defineConfig } from 'vite';
 
-module.exports = defineConfig({
+const page = (path) => resolve(import.meta.dirname, path);
+
+export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'index.html'),
-        bookmarks: resolve(__dirname, 'bookmarks.html')
-      }
-    }
-  }
-})
+        main: page('index.html'),
+        live: page('live/index.html'),
+        research: page('research/index.html'),
+        bookmarks: page('bookmarks.html'),
+      },
+    },
+  },
+});

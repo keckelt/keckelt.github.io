@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Live — Klaus Eckelt</title>
+  <meta name="author" content="Klaus Eckelt">
+  <meta name="description" content="Every concert since 2004. One column per night, one dot per act on the bill.">
+  <meta name="theme-color" content="#F6F5F0">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://eckelt.info/live/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Live — Klaus Eckelt">
+  <meta property="og:description" content="Every concert since 2004, one dot per act.">
+  <meta property="og:url" content="https://eckelt.info/live/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&family=Silkscreen&display=swap">
+</head>
+<body>
+  <header class="wrap nav nav--sub">
+    <a class="nav__home" href="/">← KLAUS <span class="surname">ECKELT</span></a>
+    <nav class="nav__links" aria-label="Main">
+      <a href="/#tour">Tour</a>
+      <a href="/#projects">Projects</a>
+      <a href="/live/" aria-current="page">Live</a>
+      <a href="/research/">Research</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="wrap intro">
+      <h1 class="display">Live</h1>
+      <p class="lead">Every concert since 2004. One column per night, one dot per act on the bill.</p>
+      <p id="stat-line-full" class="meta"></p>
+    </section>
+
+    <div class="spacer"></div>
+
+    <section class="wrap band" aria-label="Concert timeline">
+      <div class="timeline-scroll">
+        <div class="timeline">
+          <div id="timeline" class="timeline__plot"></div>
+          <div id="timeline-ticks" class="timeline__ticks"></div>
+        </div>
+      </div>
+      <div class="legend">
+        <span><span class="dot"></span>headliner</span>
+        <span><span class="dot dot--ring"></span>support</span>
+        <span>Hover a dot for the night</span>
+      </div>
+    </section>
+
+    <section class="wrap" style="padding-top: clamp(64px, 10vw, 130px)">
+      <p id="fact-line" class="lead" style="max-width: 820px"></p>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <span class="meta" style="font-size: 12px">Data: my concert sheet</span>
+    <a href="mailto:klaus@eckelt.info">klaus@eckelt.info</a>
+  </footer>
+
+  <script type="module" src="/src/main.ts"></script>
+  <script src="/counter.js"></script>
+</body>
+</html>
