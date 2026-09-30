@@ -39,7 +39,7 @@ const { title, fit = false, description = 'Klaus Eckelt builds visual analytics 
     <footer class="wrap">
       <a href={`mailto:${email}`}>{email}</a>
       <nav aria-label="Elsewhere">
-        {social.map((s) => <a href={s.href}>{s.label}</a>)}
+        {social.map((s) => <a class="ext" href={s.href}><span class="t">{s.label}</span><span class="arrow" aria-hidden="true">↗</span></a>)}
       </nav>
     </footer>
 
@@ -69,8 +69,13 @@ const { title, fit = false, description = 'Klaus Eckelt builds visual analytics 
         display: flex; flex-wrap: wrap; gap: 16px 28px; justify-content: space-between; align-items: baseline;
         padding-block: 96px 56px; font-size: 14px;
       }
-      footer nav { display: flex; flex-wrap: wrap; gap: 12px 28px; }
-      footer nav a { text-decoration: none; }
+      /* LinkedIn and Scholar: same size as the main links, so they stand out */
+      footer nav { display: flex; flex-wrap: wrap; gap: 8px 40px; font-size: 18px; }
+      footer nav a { min-height: 44px; display: inline-flex; align-items: center; }
+      @media (max-width: 600px) and (max-height: 760px) {
+        footer { row-gap: 0; }
+        footer nav { font-size: 16px; }
+      }
 
       /* One-screen pages; short screens (e.g. phones held sideways) scroll as usual */
       @media (min-height: 521px) {

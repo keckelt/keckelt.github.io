@@ -7,12 +7,14 @@ export const links = [
   { label: 'CV', href: '/CV.pdf' }, // Same URL as the old site
 ];
 
+// Professional profiles, shown prominently in every footer
 export const social = [
-  { label: 'GitHub', href: 'https://github.com/keckelt/' },
-  { label: 'Mastodon', href: 'https://vis.social/@keckelt' },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/klaus-eckelt' },
-  { label: 'Scholar', href: 'https://scholar.google.de/citations?user=_wMz-ewAAAAJ' },
+  { label: 'Google Scholar', href: 'https://scholar.google.de/citations?user=_wMz-ewAAAAJ' },
 ];
+
+// Code lives with the side projects only (/live#making), not in the footer
+export const github = 'https://github.com/keckelt/';
 
 export const email = 'klaus@eckelt.info';
 
