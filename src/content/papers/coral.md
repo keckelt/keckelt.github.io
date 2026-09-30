@@ -1,6 +1,5 @@
 ---
-title: "Coral"
-summary: "Creating and characterizing cohorts."
+title: "Coral: A Web-Based Visual Analysis Tool for Creating and Characterizing Cohorts"
 venue: "Bioinformatics"
 year: 2021
 pdf: /papers/2021_bioinformatics_coral.pdf

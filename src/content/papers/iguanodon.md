@@ -1,6 +1,5 @@
 ---
-title: "Iguanodon"
-summary: "A code-breaking game for visualization construction literacy."
+title: "Iguanodon: A Code-Breaking Game for Improving Visualization Construction Literacy"
 venue: "IEEE TVCG"
 year: 2024
 pdf: /papers/2024_iguanodon.pdf

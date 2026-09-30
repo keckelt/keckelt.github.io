@@ -1,7 +1,6 @@
 ---
-title: "TourGuide"
-summary: "Interactive visual analysis of clinical oncology data — technical and medical posters."
-venue: "OeGHO & AHOP Spring Conference"
+title: "TourGuide: Interactive Visual Analysis of Clinical Oncology Data"
+venue: "Posters, OeGHO & AHOP Spring Conference"
 year: 2019
 kind: poster
 pdf: /papers/2019_oegho_tourguide_technical_poster.pdf

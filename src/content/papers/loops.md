@@ -1,6 +1,5 @@
 ---
-title: "Loops"
-summary: "Provenance and visualization for exploratory analysis in notebooks."
+title: "Loops: Leveraging Provenance and Visualization to Support Exploratory Data Analysis in Notebooks"
 venue: "IEEE TVCG"
 year: 2024
 pdf: /papers/2024_loops.pdf

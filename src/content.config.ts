@@ -7,7 +7,7 @@ const papers = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/papers' }),
   schema: z.object({
     title: z.string(),
-    summary: z.string(),
+    summary: z.string().optional(), // Full titles say enough; use only if a title needs context
     venue: z.string(),
     year: z.number(),
     pdf: z.string().optional(), // e.g. /papers/2022_kokiri.pdf (keep old URLs)

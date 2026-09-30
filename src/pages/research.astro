@@ -42,7 +42,7 @@ const groups = [
             {g.items.filter((p) => p.year === y).map((p) => (
               <article>
                 <h3>{p.pdf || p.doi ? <a href={p.pdf ?? `https://doi.org/${p.doi}`}>{p.title}</a> : p.title}</h3>
-                <p>{p.summary}</p>
+                {p.summary && <p>{p.summary}</p>}
                 <span class="mono">{p.venue}</span>
                 <nav class="links mono" aria-label={`${p.title} links`}>
                   {p.pdf && <a href={p.pdf}>PDF</a>}
@@ -77,8 +77,9 @@ const groups = [
   .papers { padding-top: 120px; display: flex; flex-direction: column; gap: 64px; }
   .year { display: grid; grid-template-columns: 2fr 10fr; gap: 24px; }
   .year > .label { padding-top: 8px; }
-  .items { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 44px 56px; }
-  article h3 { margin: 0; font-size: 22px; font-weight: 500; letter-spacing: -0.01em; }
+  /* One column, full paper titles as headings */
+  .items { display: flex; flex-direction: column; gap: 40px; max-width: 760px; }
+  article h3 { margin: 0 0 8px; font-size: 20px; font-weight: 500; letter-spacing: -0.01em; line-height: 1.35; text-wrap: pretty; }
   article p { margin: 8px 0; font-size: 16px; line-height: 1.55; opacity: 0.85; }
   article .mono { font-size: 12px; }
   .links { display: flex; flex-wrap: wrap; gap: 4px 16px; margin-top: 6px; }
@@ -92,6 +93,6 @@ const groups = [
   @media (max-width: 860px) {
     .tour { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 36px; }
     .year, .teaching { grid-template-columns: 1fr; gap: 16px; }
-    .items { grid-template-columns: 1fr; gap: 32px; }
+    .items { gap: 32px; }
   }
 </style>

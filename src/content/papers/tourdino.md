@@ -1,6 +1,5 @@
 ---
-title: "TourDino"
-summary: "A support view for confirming patterns in tabular data."
+title: "TourDino: A Support View for Confirming Patterns in Tabular Data"
 venue: "EuroVA"
 year: 2019
 pdf: /papers/2019_eurova_tourdino.pdf

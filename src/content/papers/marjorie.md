@@ -1,6 +1,5 @@
 ---
-title: "Marjorie"
-summary: "Visualizing type 1 diabetes data for pattern exploration."
+title: "Marjorie: Visualizing Type 1 Diabetes Data to Support Pattern Exploration"
 venue: "IEEE TVCG"
 year: 2024
 pdf: /papers/2023_marjorie.pdf

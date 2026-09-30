@@ -1,6 +1,5 @@
 ---
-title: "Kokiri"
-summary: "Random forests to compare and characterize cohorts."
+title: "Kokiri: Random-Forest-Based Comparison and Characterization of Cohorts"
 venue: "VIS BioAI Workshop"
 year: 2022
 pdf: /papers/2022_kokiri.pdf

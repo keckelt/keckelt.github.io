@@ -1,6 +1,5 @@
 ---
-title: "Embedding structure"
-summary: "Relationships and structure in low-dimensional embeddings."
+title: "Visual Exploration of Relationships and Structure in Low-Dimensional Embeddings"
 venue: "IEEE TVCG"
 year: 2023
 pdf: /papers/2022_embedding_structure.pdf

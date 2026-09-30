@@ -1,6 +1,5 @@
 ---
-title: "Intensities of hate speech"
-summary: "Explaining multilingual models with XAI, a social media case study."
+title: "Exploring Intensities of Hate Speech on Social Media: A Case Study on Explaining Multilingual Models with XAI"
 venue: "LDK 2023"
 year: 2023
 pdf: /papers/2023_ditox_hate_speech.pdf
