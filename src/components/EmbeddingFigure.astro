@@ -2,63 +2,130 @@
 // "Embedding ↔ tissue": the same cell types as UMAP-style clusters above the
 // diagonal and in their place in the tissue below. Colours match across the line.
 // Generated at build time: no runtime JS. Board "1 · Embedding ↔ tissue".
-const W = 560, H = 480;
-const rnd = (i: number) => { const x = Math.sin(i * 12.9898 + 78.233) * 43758.5453; return x - Math.floor(x); };
+const W = 560,
+  H = 480;
+const rnd = (i: number) => {
+  const x = Math.sin(i * 12.9898 + 78.233) * 43758.5453;
+  return x - Math.floor(x);
+};
 const fr = (x: number, y: number) => {
-  const dx = x - 280, dy = y - 240, a = Math.atan2(dy, dx);
+  const dx = x - 280,
+    dy = y - 240,
+    a = Math.atan2(dy, dx);
   const r = 205 + 22 * Math.sin(3 * a + 0.6) + 14 * Math.cos(5 * a);
   return Math.sqrt(dx * dx * 0.85 + dy * dy * 1.15) / r;
 };
 const region = (f: number) => (f < 0.42 ? 3 : f < 0.72 ? 2 : 1); // 1 rim, 2 middle, 3 core
 const above = (x: number, y: number) => x / W + y / H < 1;
-const ell = (x: number, y: number, cx: number, cy: number, rx: number, ry: number, rot: number) => {
-  const c = Math.cos(rot), s = Math.sin(rot), dx = x - cx, dy = y - cy;
-  const u = (dx * c + dy * s) / rx, v = (-dx * s + dy * c) / ry;
+const ell = (
+  x: number,
+  y: number,
+  cx: number,
+  cy: number,
+  rx: number,
+  ry: number,
+  rot: number,
+) => {
+  const c = Math.cos(rot),
+    s = Math.sin(rot),
+    dx = x - cx,
+    dy = y - cy;
+  const u = (dx * c + dy * s) / rx,
+    v = (-dx * s + dy * c) / ry;
   return u * u + v * v;
 };
 
 // Same seeded sampling on every build, so the figure never changes
-const sample = (n: number, seed: number, accept: (x: number, y: number) => boolean) => {
+const sample = (
+  n: number,
+  seed: number,
+  accept: (x: number, y: number) => boolean,
+) => {
   const out: [number, number][] = [];
   for (let i = 0; i < 14000 && out.length < n; i++) {
-    const x = rnd(i + seed) * 556 + 2, y = rnd(i + seed + 5000) * 476 + 2;
+    const x = rnd(i + seed) * 556 + 2,
+      y = rnd(i + seed + 5000) * 476 + 2;
     if (accept(x, y)) out.push([x, y]);
   }
   return out;
 };
 
 // Clusters in the embedding: [cell type, cx, cy, rx, ry, rotation]
-const clusters = [[1, 165, 115, 110, 52, 0.45], [2, 315, 80, 72, 38, -0.2], [3, 105, 270, 55, 38, 0.3], [1, 250, 200, 40, 26, 0.1]];
-const clusterOf = (x: number, y: number) => clusters.find(([, cx, cy, rx, ry, rot]) => ell(x, y, cx, cy, rx, ry, rot) < 1);
+const clusters = [
+  [1, 165, 115, 110, 52, 0.45],
+  [2, 315, 80, 72, 38, -0.2],
+  [3, 105, 270, 55, 38, 0.3],
+  [1, 250, 200, 40, 26, 0.1],
+];
+const clusterOf = (x: number, y: number) =>
+  clusters.find(
+    ([, cx, cy, rx, ry, rot]) => ell(x, y, cx, cy, rx, ry, rot) < 1,
+  );
 
-const embedding = sample(520, 20000, (x, y) => above(x, y) && !!clusterOf(x, y))
-  .map(([x, y]) => ({ x, y, type: clusterOf(x, y)![0] }));
-const tissue = sample(700, 0, (x, y) => !above(x, y) && fr(x, y) < 1)
-  .map(([x, y]) => ({ x, y, type: region(fr(x, y)) }));
+const embedding = sample(
+  520,
+  20000,
+  (x, y) => above(x, y) && !!clusterOf(x, y),
+).map(([x, y]) => ({ x, y, type: clusterOf(x, y)![0] }));
+const tissue = sample(700, 0, (x, y) => !above(x, y) && fr(x, y) < 1).map(
+  ([x, y]) => ({ x, y, type: region(fr(x, y)) }),
+);
 const cells = [...embedding, ...tissue];
 const f1 = (n: number) => n.toFixed(1);
+// Labels run along the diagonal, one on each side of the line
+const tilt = f1((-Math.atan2(H, W) * 180) / Math.PI);
 ---
+
 <figure class="embedding">
-  <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-labelledby="emb-cap">
-    {cells.map((c) => <circle class={`t${c.type}`} cx={f1(c.x)} cy={f1(c.y)} r="2.5" />)}
-    <line x1="0" y1={H} x2={W} y2="0" />
+  <svg
+    viewBox={`0 0 ${W} ${H}`}
+    role="img"
+    aria-label="The same cell types as clusters in an embedding and in place in the tissue"
+  >
+    {
+      cells.map((c) => (
+        <circle class={`t${c.type}`} cx={f1(c.x)} cy={f1(c.y)} r="2.5" />
+      ))
+    }
+    <line x1="0" y1={H} x2={W} y2="0"></line>
+    <g class="side" transform={`translate(${W} 0) rotate(${tilt})`}>
+      <text x="-40" y="-9">Embedding</text>
+      <text x="-40" y="21">Tissue</text>
+    </g>
   </svg>
-  <figcaption id="emb-cap" class="caps">
-    <span>Embedding</span><span class="long">Same cells, two spaces</span><span>Tissue</span>
-  </figcaption>
 </figure>
 
 <style>
-  .embedding { margin: 0; display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 560px; }
-  svg { display: block; width: 100%; height: auto; }
-  .t1 { fill: var(--cell-1); }
-  .t2 { fill: var(--cell-2); }
-  .t3 { fill: var(--cell-3); }
-  line { stroke: var(--ink); stroke-width: 1; vector-effect: non-scaling-stroke; }
-  .caps {
-    display: flex; justify-content: space-between; gap: 12px;
-    font-family: var(--font-pixel); font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted);
-    white-space: nowrap;
+  .embedding {
+    margin: 0;
+    width: 100%;
+    max-width: 560px;
   }
-  @media (max-width: 600px) { .long { display: none; } }
+  svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .t1 {
+    fill: var(--cell-1);
+  }
+  .t2 {
+    fill: var(--cell-2);
+  }
+  .t3 {
+    fill: var(--cell-3);
+  }
+  line {
+    stroke: var(--ink);
+    stroke-width: 1;
+    vector-effect: non-scaling-stroke;
+  }
+  .side {
+    font-family: var(--font-pixel);
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    fill: var(--ink);
+    text-anchor: end;
+  }
 </style>
